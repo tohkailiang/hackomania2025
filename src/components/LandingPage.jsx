@@ -10,12 +10,21 @@ const LandingPage = () => {
   }
 
   return (
-    <div className="landing-page">
-      <h1>Welcome to the Quiz App</h1>
-      <p>Test your knowledge with our interactive quiz!</p>
-      <button 
+    <div className="landing-page" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh' }}>
+      <div>
+      <h1>Pengquiz</h1>
+      <p>We like penguins!</p>
+      </div>
+      <button
         onClick={handleStartQuiz}
-        className="start-button"
+        style={{
+          width: '350px',
+          height: '66px',
+          backgroundColor: '#FF0000',
+          border: '2px solid #00FF00',
+          marginBottom: '40px',
+          alignSelf: 'center'
+        }}
       >
         Start Quiz
       </button>
