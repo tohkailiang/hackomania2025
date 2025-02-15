@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+// import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
@@ -12,10 +12,31 @@ import Result from './data/Result';
 import Interactions from './data/Interactions.js'
 import InteractionsPanel from './components/InteractionsPanel.jsx'
 import RedirectPanel from './components/RedirectPanel.jsx'
+// import LinkCard from './components/LinkCard.jsx'
+// import LinkCardViewer from './components/LinkCardViewer.jsx'
+import RecommendationPage from './components/RecommendationPage.jsx'
 
 const user = new User();
 
 console.log(user);
+
+const linkCards = [
+  {
+    imagePath: './sprites/results/honeybee.png',
+    description: 'First Link Card',
+    link: 'https://www.google.com'
+  },
+  {
+    imagePath: './sprites/results/elephant.png',
+    description: 'Second Link Card',
+    link: 'https://www.youtube.com'
+  },
+  {
+    imagePath: './sprites/results/axolotl.png',
+    description: 'Third Link Card',
+    link: 'https://www.google.com'
+  }
+];
 
 const result = new Result()
 .setAffinities([
@@ -34,6 +55,7 @@ createRoot(document.getElementById('root')).render(
     <div className="container" style={{position:'relative', zIndex:'1', display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/" element={<LinkCardViewer linkCards={linkCards} description="ching chong!" />} /> */}
         <Route path="/quiz" element={
           <>
             <div>
@@ -47,6 +69,12 @@ createRoot(document.getElementById('root')).render(
         <Route path="/interactions" element={<InteractionsPanel interactions={interactions} />} />
         <Route path="/results" element={<ResultsPanel result={result} />} />
         <Route path="/redirect" element={<RedirectPanel />} />
+        <Route path="/recommendations" element={
+          <RecommendationPage 
+            topic="animals"
+            title="Hi {name}, since you liked {topic}, here are some recommendations for you."
+          />
+        } />
       </Routes>
     </div>
         <div style={{position:'absolute', bottom: '10px', left: '10px', zIndex:'2'}}>
