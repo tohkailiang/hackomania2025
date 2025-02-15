@@ -44,10 +44,10 @@ const result = new Result()
   "./sprites/results/honeybee.png"
 ])
 .setLogo("./sprites/results/raccoon.png")
-.setQuotes(["I need friends...", "But I don't want to leave my bed."])
+.setQuotes(["Non-existent attention span", "Keyboard warrior, but in a good way.", "Can be competitive sometimes", "Geeky, adorable and funny."])
 .setReviews(["So cute!", "Chickens are superior tbh."])
 .setTitle("Pengwing")
-.setTraits(["Aggressively", "Passive"]);
+.setTraits(["Cheerful", "Forgetful", "Fast learner", "Resourceful", "Enthusiastic"]);
 
 const interactions = new Interactions();
 createRoot(document.getElementById('root')).render(
@@ -57,7 +57,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/" element={
           <LandingPage 
             logo="./sprites/pengwing.png" 
-            title="Pengwing" 
+            title="PengQuiz" 
             description="A personality quiz for fowl-lovers" 
           />
         } />
