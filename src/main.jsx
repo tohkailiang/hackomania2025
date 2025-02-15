@@ -61,7 +61,6 @@ createRoot(document.getElementById('root')).render(
             description="A personality quiz for fowl-lovers" 
           />
         } />
-        {/* <Route path="/" element={<LinkCardViewer linkCards={linkCards} description="ching chong!" />} /> */}
         <Route path="/quiz" element={
           <>
             <div>

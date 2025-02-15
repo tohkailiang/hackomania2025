@@ -75,7 +75,8 @@ export default function RecommendationPage({ topic, title }) {
       height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-      overflow: 'hidden'
+      overflow: 'hidden',
+      position: 'relative'
       }}>
       <h1 style={{
         textAlign: 'center',
@@ -92,11 +93,36 @@ export default function RecommendationPage({ topic, title }) {
         padding: '0 20px'
       }}>
         {recommendationSets.map((set, index) => (
-          <LinkCardViewer
-            key={index}
+          <div key={index}>
+            <LinkCardViewer
             description={set.description}
             linkCards={set.linkCards}
           />
+            {index === recommendationSets.length - 1 && (
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                marginTop: '20px',
+                gap: '20px'
+              }}>
+                <span style={{ fontSize: '16px' }}>Want to save the recommendations? Sign up for a GeeksHacking account to connect with like-minded people!</span>
+                <button style={{
+                  border: 'none',
+                  background: '#007bff',
+                  color: 'white',
+                  padding: '10px 20px',
+                  borderRadius: '5px',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center'
+                }}>
+                  <span style={{ fontSize: '20px' }}>Sign up</span>
+                </button>
+      </div>
+            )}
+    </div>
         ))}
       </div>
     </div>

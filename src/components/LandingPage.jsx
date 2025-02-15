@@ -8,28 +8,19 @@ const LandingPage = ({ logo, title, description }) => {
   const handleStartQuiz = () => {
     navigate('/quiz');
   }
-
   return (
-    <div className="landing-page" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh' }}>
-      <div>
+    <div className="landing-page">
         <img src={logo} alt="Logo" className="landing-logo" />
+      <div className="content-container">
         <h1>{title}</h1>
         <p>{description}</p>
-      </div>
-      <button
-        className="start-button"
-        onClick={handleStartQuiz}
-        style={{
-          width: '350px',
-          height: '66px',
-          backgroundColor: '#FF0000',
-          border: '2px solid #00FF00',
-          marginBottom: '40px',
-          alignSelf: 'center'
-        }}
-      >
+        <button
+          className="start-button"
+          onClick={handleStartQuiz}
+        >
         Start Quiz
       </button>
+    </div>
     </div>
   );
 }
