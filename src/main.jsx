@@ -64,6 +64,12 @@ createRoot(document.getElementById('root')).render(
             <div style={{marginTop: 'auto', paddingBottom: '0px'}}>
               <QuizPanel quizbank="./data/quizbank.json" user={user} />
             </div>
+        <div style={{position:'absolute', bottom: '10px', left: '10px', zIndex:'2'}}>
+        <ImagePoker image={"sprites/chicken.png"} interactions={interactions} isWhiteChick={true}></ImagePoker>
+        </div>
+        <div style={{position:'absolute', bottom: '10px', right: '10px', zIndex:'2'}}>
+        <ImagePoker image={"sprites/rooster.png"} interactions={interactions} isWhiteChick={false}></ImagePoker>
+        </div>
           </>
         } />
         <Route path="/interactions" element={<InteractionsPanel interactions={interactions} />} />
@@ -77,11 +83,5 @@ createRoot(document.getElementById('root')).render(
         } />
       </Routes>
     </div>
-        <div style={{position:'absolute', bottom: '10px', left: '10px', zIndex:'2'}}>
-        <ImagePoker image={"sprites/chicken.png"} interactions={interactions} isWhiteChick={true}></ImagePoker>
-        </div>
-        <div style={{position:'absolute', bottom: '10px', right: '10px', zIndex:'2'}}>
-        <ImagePoker image={"sprites/rooster.png"} interactions={interactions} isWhiteChick={false}></ImagePoker>
-        </div>
   </BrowserRouter>
 )
