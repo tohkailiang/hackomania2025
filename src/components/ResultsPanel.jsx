@@ -6,6 +6,7 @@ import Logo from './results/Logo';
 import './ResultsPanel.css';
 import Affinities from './results/Affinities';
 import { Personalities } from '../systems/personalities.js';
+import User from '../data/User';
 
 class ResultsPanel extends React.Component {
   constructor(props) {
