@@ -5,6 +5,6 @@ import QuizPanel from './components/QuizPanel.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <QuizPanel question="Hello world?" options={["options1", "options2"]} answer="tada"/>
+    <QuizPanel quizbank="./data/quizbank.json"/>
   </StrictMode>,
 )

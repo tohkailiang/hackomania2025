@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Question extends React.Component {
   constructor(props) {
@@ -16,5 +17,9 @@ class Question extends React.Component {
     );
   }
 }
+
+Question.propTypes = {
+  text: PropTypes.string.isRequired
+};
 
 export default Question;

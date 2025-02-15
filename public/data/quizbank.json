@@ -1,0 +1,26 @@
+{
+  "questions": [
+    "why am i here?",
+    "who are you?",
+    "where am i?",
+    "what are u?",
+    "when go home?"
+  ],
+  "optionSets": [
+    {
+      "options": ["A1", "B1", "C1"]
+    },
+    {
+      "options": ["A2", "B2", "C2"]
+    },
+    {
+      "options": ["A3", "B3", "C3"]
+    },
+    {
+      "options": ["A4", "B4", "C4"]
+    },
+    {
+      "options": ["A5", "B5", "C5"]
+    }
+  ] 
+}

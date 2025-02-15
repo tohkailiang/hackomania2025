@@ -7,27 +7,47 @@ class QuizPanel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      question: props.question,
-      options: props.options,
-      answer: props.answer
+      isLoading: true,
+      question: '',
+      options: []
     };
+  }
 
-    this.question = props.question;
-    this.options = props.options;
-    this.answer = props.answer;
+  componentDidMount() {
+    fetch(this.props.quizbank)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.setState({
+          isLoading: false,
+          question: data.questions[1],
+          options: data.optionSets[1].options
+        });
+      })
+      .catch(error => {
+        console.error('Error loading quiz bank:', error);
+        this.setState({ isLoading: false });
+      });
   }
 
   render() {
+    const { isLoading, question, options } = this.state;
+
+    if (isLoading) {
+      return <div>Loading...</div>;
+    }
+
     return (
       <div>
         <div>
-          <Question text={this.state.question} />
+          <Question text={question} />
         </div>
         <div>
-          <Options options={this.state.options} />
-        </div>
-        <div>
-          {this.state.answer}
+          <Options options={options} />
         </div>
       </div>
     );
@@ -35,9 +55,7 @@ class QuizPanel extends React.Component {
 }
 
 QuizPanel.propTypes = {
-  question: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  answer: PropTypes.string.isRequired
+  quizbank: PropTypes.string.isRequired
 };
 
 export default QuizPanel;
