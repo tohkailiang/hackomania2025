@@ -6,9 +6,8 @@ const RedirectPanel = () => {
   const navigate = useNavigate();
 
   const handleProceed = () => {
-    // Store the name value (you can add your storage logic here)
-    console.log('Name submitted:', name);
-    navigate('/');
+    // Navigate to recommendations with the name as a state parameter
+    navigate('/recommendations', { state: { username: name } });
   };
 
   return (
