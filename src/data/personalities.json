@@ -59,9 +59,9 @@
             "bestattr": "CONSCIENTIOUSNESS",
             "worstattr": "NEUROTICISM",
             "relations": [ "Owl", "Elephant" ],
-            "reviews": ["I've never seen them panic in my life", "If only that could be me"],
+            "reviews": ["I've never seen them panic in my life", "Woah their desk is so neat.. their LIFE is so neat"],
             "quotes": ["Calm down, guys", "I got this", "Did you change the plan?", "I'll fix it"],
-            "traits":["Organized","Responsible", "Emotionally stable", "atraits4"]
+            "traits":["Organized","Responsible", "Emotionally stable", "Goal oriented"]
         },
         {
             "name": "Peacock",
