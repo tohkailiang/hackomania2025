@@ -71,7 +71,7 @@ class ResultsPanel extends React.Component {
           </div>
 
           <button
-            onClick={() => this.props.navigate('/redirect')}
+            onClick={() => this.props.navigate('/interactions')}
             className="continue-button"
           >
             Continue

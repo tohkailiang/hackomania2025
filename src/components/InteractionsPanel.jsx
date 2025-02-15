@@ -64,8 +64,8 @@ const InteractionsPanel = ({ interactions }) => {
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: 'auto' }}>
-        <button
-          onClick={() => navigate('/results')}
+      <button
+          onClick={() => navigate('/redirect')}
           style={{
             width: '350px',
             maxWidth: '100%',
@@ -75,7 +75,7 @@ const InteractionsPanel = ({ interactions }) => {
             marginBottom: '20px'
           }}
         >
-          View Results
+          Continue
         </button>
       </div>
     </div>
