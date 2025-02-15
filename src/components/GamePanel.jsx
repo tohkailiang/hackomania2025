@@ -27,11 +27,11 @@ export default function GamePanel()
                 opendoor(!doorstate);
                 if(doorstate)
                 {
-                    changedoor("dooropen.png");
+                    changedoor("doorclose.png");
                 }
                 else
                 {
-                    changedoor("doorclose.png");
+                    changedoor("dooropen.png");
                 }
             }}
           ></ImageToggle>
