@@ -21,7 +21,11 @@ const InteractionsPanel = ({ interactions }) => {
         width: '100%'
       }}>
         <h3>Interaction Statistics</h3>
-        <div className="stats-grid">
+        <div className="stats-grid" style={{
+          display: 'flex',
+          flexDirection: 'column',
+                gap: '10px'
+        }}>
           {Object.entries(interactions).map(([key, value], index) => (
             <motion.div
               key={key}
@@ -39,7 +43,9 @@ const InteractionsPanel = ({ interactions }) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'flex-start',
-                gap: '10px'
+                gap: '10px',
+                minHeight: '84px',
+                textAlign: 'left'
               }}
             >
               <img
@@ -48,6 +54,7 @@ const InteractionsPanel = ({ interactions }) => {
                 style={{
                   width: '64px',
                   height: '64px',
+                  flexShrink: 0, // Prevent image from shrinking
                   objectFit: 'contain'
                 }}
               />
