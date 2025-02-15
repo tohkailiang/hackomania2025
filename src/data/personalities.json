@@ -5,90 +5,90 @@
             "bestattr": "OPENNESS",
             "worstattr": "CONSCIENTIOUSNESS",
             "relations": [ "Axolotl", "Octopus" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1", "atraits2", "atraits3", "atraits4"]
+            "reviews": ["ok but can this even be finished?", "for the last time please stick to the damn plan"],
+            "quotes": ["I have so many ideas!", "Why so rigid?", "Think about the details later!", "Let's try this now!"],
+            "traits":["Creative", "Impulsive", "Adaptable", "Disorganised"]
         },
         {
             "name": "Axolotl",
             "bestattr": "OPENNESS",
             "worstattr": "EXTRAVERSION",
             "relations": [ "Elephant", "Manatee" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["I really want to hear what they think", "Where are they?"],
+            "quotes": ["I'd rather do this alone..", "Plans? Going home straight", "I find inspiration in solitude", "No, I don't need to talk about it"],
+            "traits":["Curious", "Reflective", "Artistic", "Reserved"]
         },
         {
             "name": "Octopus",
             "bestattr": "OPENNESS",
             "worstattr": "AGREEABLENESS",
             "relations": [ "Raccoon", "Honeybee" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["I hate discussing with them", "They got pretty good ideas though"],
+            "quotes": ["Gah, i'll do it my way", "Why do you think so?", "You're not being rational", "I have my own ideas"],
+            "traits":["Creative","Independent", "Non-conformist", "Assertive"]
         },
         {
             "name": "Elephant",
             "bestattr": "OPENNESS",
             "worstattr": "NEUROTICISM",
             "relations": [ "Owl", "Tiger" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["So fun to be with!", "How are they still so optimistic?!"],
+            "quotes": ["Change is exciting!", "Life is exciting!", "The unknown is exciting!", "I'M EXCITED"],
+            "traits":["Creative", "Adaptable", "Emotionally stable", "Open-minded"]
         },
         {
             "name": "Owl",
             "bestattr": "CONSCIENTIOUSNESS",
             "worstattr": "EXTRAVERSION",
             "relations": [ "ProGamer" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2",  "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["They always complete their tasks real quick!", "Who?"],
+            "quotes": ["Work first..", "I'll do my part",  "Meeting? No thank you..", "You don't need to check in on me.."],
+            "traits":["Organized", "Reliable", "Task-oriented", "Reserved"]
         },
         {
             "name": "Tiger",
             "bestattr": "CONSCIENTIOUSNESS",
             "worstattr": "AGREEABLENESS",
             "relations": [ "Peacock", "Manatee" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2","atraits3", "atraits4"]
+            "reviews": ["I'm quite scared of them..", "They're so efficient!"],
+            "quotes": ["I'm not here to make friends", "I'm here to WORK", "Even if you don't agree, it's like this.", "That's not how you do it"],
+            "traits":["Detail-oriented","Practical","Competitive", "Assertive"]
         },
         {
             "name": "Honeybee",
             "bestattr": "CONSCIENTIOUSNESS",
             "worstattr": "NEUROTICISM",
             "relations": [ "Tiger", "Owl" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["I've never seen them panic in my life", "If only that could be me"],
+            "quotes": ["Calm down, guys", "I got this", "Did you change the plan?", "I'll fix it"],
+            "traits":["Organized","Responsible", "Emotionally stable", "atraits4"]
         },
         {
             "name": "Peacock",
             "bestattr": "EXTRAVERSION",
             "worstattr": "AGREEABLENESS",
             "relations": [ "Golden Retriever", "Honeybee" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["Good leader? You mean DICTATOR", "They obviously don't care about anyone else"],
+            "quotes": ["Did I stutter?", "Stop being so half-assed", "I'm here to win", "You're wrong"],
+            "traits":["Outgoing","Assertive", "Competitive", "Direct"]
         },
         {
             "name": "Golden Retriever",
             "bestattr": "EXTRAVERSION",
             "worstattr": "NEUROTICISM",
             "relations": [ "Raccoon", "Tiger" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["Definitely the life of the party", "So reliable and optimisic!"],
+            "quotes": ["I LOVE YOU MUAMUA", "Don't worry, i'm A OK!", "Gathering?! I'll be there!", "A small setback is nothing!"],
+            "traits":["Energetic","Enthusiastic", "Sociable", "Emotionally resilient"]
         },
         {
             "name": "Manatee",
             "bestattr": "AGREEABLENESS",
             "worstattr": "NEUROTICISM",
             "relations": [ "Golden Retriever", "Axolotl" ],
-            "reviews": ["areview1", "areview1"],
-            "quotes": ["aquote1", "aquote2", "aquote3", "aquote4"],
-            "traits":["atraits1","atraits2", "atraits3", "atraits4"]
+            "reviews": ["An angel descended from the Heavens..", "I go to them for advice 5 times a day"],
+            "quotes": ["Are you alright?", "Everything will work out", "We got this!", "Let me know if you need something"],
+            "traits":["Empathetic","Supportive", "Calm", "Easygoing"]
         }
         
 
