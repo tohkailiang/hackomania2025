@@ -1,31 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import OptionButton from './OptionButton';
 
-class Options extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      options: props.options
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        {this.state.options.map((option, index) => (
-          <OptionButton 
-            key={index}
-            text={option}
-          />
-        ))}
-      </div>
-    );
-  }
-}
+const Options = ({ options }) => {
+  return (
+    <div>
+      {options.map((option, index) => (
+        <button key={index}>
+          {option.text}
+        </button>
+      ))}
+    </div>
+  );
+};
 
 Options.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string).isRequired
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      score: PropTypes.arrayOf(PropTypes.number).isRequired
+    })
+  ).isRequired
 };
 
 export default Options;

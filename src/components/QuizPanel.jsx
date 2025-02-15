@@ -21,17 +21,15 @@ class QuizPanel extends React.Component {
         }
         return response.json();
       })
-      .then(data => {
+      .then(data => { // pass
         this.setState({
           isLoading: false,
           question: data.questions[1],
           options: data.optionSets[1].options
         });
+
+        console.log(data);
       })
-      .catch(error => {
-        console.error('Error loading quiz bank:', error);
-        this.setState({ isLoading: false });
-      });
   }
 
   render() {
