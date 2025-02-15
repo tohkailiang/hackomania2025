@@ -22,7 +22,7 @@ export default function GamePanel({interactions})
     const background = "gamebackground.png";
 
     return (
-        <Stage width={1500} height={560} options={{ background: 0xffffff }}>
+        <Stage width={1500} height={560} options={{ background: 0xffffff, backgroundAlpha:0}}>
 
           <ImageToggle X={750} Y={280} image={doorpng} 
           interactions={interactions}

@@ -13,7 +13,7 @@ export default function ImagePoker({image, interactions, isWhiteChick}) {
         x={150}
         y={300}
         anchor={(0.5, 0.5)}
-        scale={0.5}
+        scale={{x:isWhiteChick?-0.5:0.5, y:0.5}}
         interactive={true}
                 ref={spriteRef}
                 onpointerup={()=>
