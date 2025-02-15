@@ -36,19 +36,19 @@
       "options": [
         {
           "text": "Coding",
-          "score": [1, 2, 2, 2, 6]
+          "score": [4, 5, 2, 2, 2]
         },
         {
           "text": "Gaming",
-          "score": [5, 3, 2, 7, 1]
+          "score": [3, 3, 4, 3, 3]
         },
         {
           "text": "Researching",
-          "score": [8, 2, 0, 4, 4]
+          "score": [5, 5, 2, 3, 2]
         },
         {
           "text": "Tinkering with robotics",
-          "score": [3, 6, 6, 6, 7]
+          "score": [2, 3, 4, 4, 2]
         }
       ]
     },
@@ -56,19 +56,19 @@
       "options": [
         {
           "text": "Hackomania :) GeeksHacking hi :)",
-          "score": [1, 2, 2, 2, 6]
+          "score": [5, 4, 5, 3, 2]
         },
         {
           "text": "Anime Festival Asia",
-          "score": [5, 3, 2, 7, 1]
+          "score": [5, 3, 5, 4, 3]
         },
         {
           "text": "Gamescom Asia",
-          "score": [8, 2, 0, 4, 4]
+          "score": [4, 3, 5, 3, 3]
         },
         {
           "text": "Singapore Science Festival",
-          "score": [3, 6, 6, 6, 7]
+          "score": [4, 4, 3, 3, 2]
         }
       ]
     },
@@ -76,19 +76,19 @@
       "options": [
         {
           "text": "Freebies",
-          "score": [1, 2, 2, 2, 6]
+          "score": [2, 2, 4, 3, 3]
         },
         {
           "text": "Buying merchandise",
-          "score": [5, 3, 2, 7, 1]
+          "score": [3, 4, 3, 3, 2]
         },
         {
           "text": "Experience",
-          "score": [8, 2, 0, 4, 4]
+          "score": [5, 3, 4, 3, 2]
         },
         {
           "text": "Good company",
-          "score": [3, 6, 6, 6, 7]
+          "score": [3, 3, 4, 5, 2]
         }
       ]
     },
@@ -96,19 +96,19 @@
       "options": [
         {
           "text": "Look for familiar faces",
-          "score": [1, 2, 2, 2, 6]
+          "score": [3, 2, 4, 4, 3]
         },
         {
           "text": "Die inside from anxiety",
-          "score": [5, 3, 2, 7, 1]
+          "score": [2, 2, 2, 3, 5]
         },
         {
           "text": "Text your friends or update social media",
-          "score": [8, 2, 0, 4, 4]
+          "score": [3, 3, 4, 4, 3]
         },
         {
           "text": "Go straight to objectives e.g booths",
-          "score": [3, 6, 6, 6, 7]
+          "score": [3, 4, 3, 3, 2]
         }
       ]
     },
@@ -116,19 +116,19 @@
       "options": [
         {
           "text": "Leave lmao my social anxiety ain't got time for this",
-          "score": [1, 2, 2, 2, 6]
+          "score": [2, 3, 2, 2, 5]
         },
         {
           "text": "Gather up courage and talk to a stranger",
-          "score": [5, 3, 2, 7, 1]
+          "score": [3, 3, 3, 4, 3]
         },
         {
           "text": "Confidently make friends with a stranger",
-          "score": [8, 2, 0, 4, 4]
+          "score": [3, 3, 5, 4, 2]
         },
         {
           "text": "Do nothing about it. I mean, who cares?",
-          "score": [3, 6, 6, 6, 7]
+          "score": [1, 2, 2, 2, 4]
         }
       ]
     },
@@ -136,19 +136,19 @@
       "options": [
         {
           "text": "Technically! e.g programmer",
-          "score": [1, 2, 2, 2, 6]
+          "score": [4, 5, 2, 3, 2]
         },
         {
           "text": "Creatively! e.g designer",
-          "score": [5, 3, 2, 7, 1]
+          "score": [5, 4, 3, 3, 2]
         },
         {
           "text": "Communicatively! e.g manager",
-          "score": [8, 2, 0, 4, 4]
+          "score": [3, 4, 4, 5, 2]
         },
         {
           "text": "Analytically! e.g data analyst",
-          "score": [3, 6, 6, 6, 7]
+          "score": [4, 5, 2, 3, 2]
         }
       ]
     },
@@ -156,19 +156,19 @@
       "options": [
         {
           "text": "Mingling with the others",
-          "score": [1, 2, 2, 2, 6]
+          "score": [3, 2, 5, 4, 2]
         },
         {
           "text": "Scavenging for extra food or drinks",
-          "score": [5, 3, 2, 7, 1]
+          "score": [2, 3, 3, 3, 3]
         },
         {
           "text": "Stand awkwardly in the middle of nowhere",
-          "score": [8, 2, 0, 4, 4]
+          "score": [2, 2, 2, 3, 4]
         },
         {
           "text": "Secretly leaving the party",
-          "score": [3, 6, 6, 6, 7]
+          "score": [2, 3, 2, 2, 4]
         }
       ]
     },
@@ -176,39 +176,38 @@
       "options": [
         {
           "text": "Hobbies that require no brain power",
-          "score": [1, 2, 2, 2, 6]
+          "score": [2, 3, 2, 3, 2]
         },
         {
           "text": "Spending time with loved ones",
-          "score": [5, 3, 2, 7, 1]
+          "score": [3, 3, 4, 5, 2]
         },
         {
           "text": "Working on projects",
-          "score": [8, 2, 0, 4, 4]
+          "score": [4, 5, 2, 3, 2]
         },
         {
           "text": "Touching grass outside alone",
-          "score": [3, 6, 6, 6, 7]
-        }
+          "score": [3, 3, 2, 3, 2]
       ]
     },
     {
       "options": [
         {
           "text": "I'm on my way! Wait for me.",
-          "score": [1, 2, 2, 2, 6]
+          "score": [3, 2, 5, 4, 2]
         },
         {
           "text": "Are you crazy or drunk? It's 3am! Next time?",
-          "score": [5, 3, 2, 7, 1]
+          "score": [2, 4, 2, 3, 3]
         },
         {
           "text": "No.",
-          "score": [8, 2, 0, 4, 4]
+          "score": [2, 4, 2, 2, 3]
         },
         {
           "text": "Nothing; I ignore the call",
-          "score": [3, 6, 6, 6, 7]
+          "score": [2, 3, 2, 2, 3]
         }
       ]
     },
@@ -216,19 +215,19 @@
       "options": [
         {
           "text": "BED MY BELOVED BED.. Sleep!",
-          "score": [1, 2, 2, 2, 6]
+          "score": [2, 4, 2, 3, 3]
         },
         {
           "text": "Scroll social media mindlessly",
-          "score": [5, 3, 2, 7, 1]
+          "score": [3, 2, 3, 3, 2]
         },
         {
           "text": "Hobby time! Play games? Read? Write?",
-          "score": [8, 2, 0, 4, 4]
+          "score": [4, 3, 3, 3, 2]
         },
         {
           "text": "Ponder about life and think about the event you just attended",
-          "score": [3, 6, 6, 6, 7]
+          "score": [5, 3, 2, 3, 2]
         }
       ]
     }
