@@ -1,10 +1,20 @@
 {
   "questions": [
-    "why am i here?",
-    "why r u hear??",
-    "where am i?",
-    "what are u?",
-    "when go home?"
+    {
+      "text": "What's your preferred way to spend a wee1kend?"
+    },
+    {
+      "text": "What's your preferred way to spend a weekend2?"
+    },
+    {
+      "text": "What's your preferred way to spend a weeken3d?"
+    },
+    {
+      "text": "What's your preferred way to spend a weeke4nd?"
+    },
+    {
+      "text": "What's your preferred way to spend a we5ekend?"
+    }
   ],
   "optionSets": [
     {
@@ -30,7 +40,7 @@
     {
       "options": [
         {
-          "text": "im here cause penguin",
+          "text": "im here cause penguin2",
           "score": [1, 2, 2, 2, 6]
         },
         {
@@ -50,7 +60,7 @@
     {
       "options": [
         {
-          "text": "im here cause penguin",
+          "text": "im here cause penguin3",
           "score": [1, 2, 2, 2, 6]
         },
         {
@@ -70,7 +80,7 @@
     {
       "options": [
         {
-          "text": "im here cause penguin",
+          "text": "im here cause penguin4",
           "score": [1, 2, 2, 2, 6]
         },
         {
@@ -90,7 +100,7 @@
     {
       "options": [
         {
-          "text": "im here cause penguin",
+          "text": "im here cause penguin5",
           "score": [1, 2, 2, 2, 6]
         },
         {

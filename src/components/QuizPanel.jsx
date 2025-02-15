@@ -8,8 +8,9 @@ class QuizPanel extends React.Component {
     super(props);
     this.state = {
       isLoading: true,
-      question: '',
-      options: []
+      currentQuestionIndex: 0,
+      questions: [],
+      optionSets: [],
     };
   }
 
@@ -21,31 +22,54 @@ class QuizPanel extends React.Component {
         }
         return response.json();
       })
-      .then(data => { // pass
+      .then(data => {
         this.setState({
           isLoading: false,
-          question: data.questions[1],
-          options: data.optionSets[1].options
+          questions: data.questions,
+          optionSets: data.optionSets
         });
-
-        console.log(data);
       })
+      .catch(error => {
+        console.error('Error loading quiz data:', error);
+        this.setState({ isLoading: false });
+      });
+  }
+
+  handleOptionClick = (option) => {
+    this.setState(prevState => {
+      const nextIndex = prevState.currentQuestionIndex + 1;
+      if (nextIndex >= prevState.questions.length) {
+        // Handle quiz completion here
+        console.log('Quiz completed!');
+        return prevState;
+      }
+      return {
+        currentQuestionIndex: nextIndex
+      };
+    });
   }
 
   render() {
-    const { isLoading, question, options } = this.state;
+    const { isLoading, questions, optionSets, currentQuestionIndex } = this.state;
 
     if (isLoading) {
       return <div>Loading...</div>;
     }
 
+    if (questions.length === 0 || optionSets.length === 0) {
+      return <div>No questions available</div>;
+    }
+
     return (
       <div>
         <div>
-          <Question text={question} />
+          <Question text={questions[currentQuestionIndex]} />
         </div>
         <div>
-          <Options options={options} />
+          <Options 
+            options={optionSets[currentQuestionIndex].options} 
+            onOptionClick={this.handleOptionClick}
+          />
         </div>
       </div>
     );
