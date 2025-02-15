@@ -40,7 +40,6 @@ class QuizPanel extends React.Component {
     this.setState(prevState => {
       const nextIndex = prevState.currentQuestionIndex + 1;
       if (nextIndex >= prevState.questions.length) {
-        // Navigate back to home when quiz is complete
         if (this.props.navigate) {
           this.props.navigate('/');
         }
@@ -57,25 +56,32 @@ class QuizPanel extends React.Component {
 
     const containerStyle = {
       display: 'flex',
-      flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      minHeight: '100vh',
-      textAlign: 'center',
-      backgroundColor: 'white'
+      padding: '20px',
     };
 
     const panelStyle = {
       width: '600px',
-      height: '800px',
+      height: '250px',
       borderRadius: '10px',
       backgroundColor: 'white',
       boxShadow: '0 0 10px rgba(0,0,0,0.1)',
       display: 'flex',
       flexDirection: 'column',
+      padding: '20px',
+      boxSizing: 'border-box'
+    };
+
+    const questionContainerStyle = {
+      flex: 1,
+      display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center',
-      padding: '20px'
+      justifyContent: 'center'
+    };
+
+    const optionsContainerStyle = {
+      paddingBottom: '0px'
     };
 
     if (isLoading) {
@@ -89,10 +95,10 @@ class QuizPanel extends React.Component {
     return (
       <div style={containerStyle}>
         <div style={panelStyle}>
-          <div>
+          <div style={questionContainerStyle}>
           <Question text={questions[currentQuestionIndex]} />
         </div>
-        <div>
+          <div style={optionsContainerStyle}>
           <Options
             options={optionSets[currentQuestionIndex].options}
             onOptionClick={this.handleOptionClick}
@@ -104,7 +110,6 @@ class QuizPanel extends React.Component {
   }
 }
 
-// Wrapper component to provide navigation
 const QuizPanelWithRouter = (props) => {
   const navigate = useNavigate();
   return <QuizPanel {...props} navigate={navigate} />;
