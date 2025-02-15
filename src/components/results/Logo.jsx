@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Logo extends React.Component {
   constructor(props) {
@@ -7,11 +8,17 @@ class Logo extends React.Component {
   }
 
   render() {
+    const { text } = this.props;
     return (
       <div>
+        {text}
       </div>
     );
   }
 }
+
+Logo.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 export default Logo;

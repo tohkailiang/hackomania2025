@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import Question from './Question';
 import Options from './Options';
+import ResultsPanel from './ResultsPanel';
 
 class QuizPanel extends React.Component {
   constructor(props) {
