@@ -11,6 +11,7 @@ import ResultsPanel from './components/ResultsPanel';
 import Result from './data/Result';
 import Interactions from './data/Interactions.js'
 import InteractionsPanel from './components/InteractionsPanel.jsx'
+import RedirectPanel from './components/RedirectPanel.jsx'
 
 const user = new User();
 
@@ -45,6 +46,7 @@ createRoot(document.getElementById('root')).render(
         } />
         <Route path="/interactions" element={<InteractionsPanel interactions={interactions} />} />
         <Route path="/results" element={<ResultsPanel result={result} />} />
+        <Route path="/redirect" element={<RedirectPanel />} />
       </Routes>
     </div>
         <div style={{position:'absolute', bottom: '10px', left: '10px', zIndex:'2'}}>

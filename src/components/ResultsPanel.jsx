@@ -66,20 +66,20 @@ class ResultsPanel extends React.Component {
         </section>
 
         <button
-            onClick={() => this.props.navigate('/')}
-            style={{
-              width: '350px',
-              maxWidth: '100%',  // Add this line
-              height: '66px',
-              backgroundColor: '#FF0000',
-              border: '2px solid #00FF00',
-              marginTop: '20px',
-              marginBottom: '20px',  // Add this line
-              alignSelf: 'center'
-            }}
-          >
-            Return to Home
-          </button>
+          onClick={() => this.props.navigate('/redirect')}
+          style={{
+            width: '350px',
+            maxWidth: '100%',
+            height: '66px',
+            backgroundColor: '#FF0000',
+            border: '2px solid #00FF00',
+            marginTop: '20px',
+            marginBottom: '20px',
+            alignSelf: 'center'
+          }}
+        >
+          Continue
+        </button>
         </div>
       </div>
     );
