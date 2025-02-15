@@ -8,6 +8,7 @@ import GamePanel from './components/GamePanel.jsx'
 import User from './data/User.js'
 import ResultsPanel from './components/ResultsPanel';
 import Result from './data/Result';
+import Interactions from './data/Interactions.js'
 
 const user = new User();
 
@@ -21,6 +22,8 @@ const result = new Result()
 .setReviews(["So cute!", "Chickens are superior tbh."])
 .setTitle("Pengwing")
 .setTraits(["Aggressively", "Passive"]);
+
+const interactions = new Interactions();
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
