@@ -8,7 +8,7 @@ export default function RecommendationPage({ topic, title }) {
 
   const recommendationSets = [
     {
-      description: "Popular picks",
+      description: "Upcoming events that you might be interested in:",
       linkCards: [
         {
           imagePath: './sprites/results/honeybee.png',
@@ -28,7 +28,7 @@ export default function RecommendationPage({ topic, title }) {
       ]
     },
     {
-      description: "New releases",
+      description: "Communities that you might be interested in:",
       linkCards: [
         {
           imagePath: './sprites/results/raccoon.png',
@@ -44,26 +44,6 @@ export default function RecommendationPage({ topic, title }) {
           imagePath: './sprites/results/elephant.png',
           description: 'New Release 3',
           link: 'https://example.com/new3'
-        }
-      ]
-    },
-    {
-      description: "You might also like",
-      linkCards: [
-        {
-          imagePath: './sprites/results/axolotl.png',
-          description: 'Similar 1',
-          link: 'https://example.com/similar1'
-        },
-        {
-          imagePath: './sprites/results/raccoon.png',
-          description: 'Similar 2',
-          link: 'https://example.com/similar2'
-        },
-        {
-          imagePath: './sprites/results/honeybee.png',
-          description: 'Similar 3',
-          link: 'https://example.com/similar3'
         }
       ]
     }
@@ -88,7 +68,7 @@ export default function RecommendationPage({ topic, title }) {
       <div style={{
         display: 'flex',
         flexDirection: 'column',
-        gap: '40px',
+        gap: '0px',
         overflowY: 'auto',
         padding: '0 20px'
       }}>
@@ -103,7 +83,7 @@ export default function RecommendationPage({ topic, title }) {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginTop: '20px',
+                marginTop: '40px',
                 gap: '20px'
               }}>
                 <span style={{ fontSize: '16px' }}>Want to save the recommendations? Sign up for a GeeksHacking account to connect with like-minded people!</span>

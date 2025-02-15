@@ -82,8 +82,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/redirect" element={<RedirectPanel />} />
         <Route path="/recommendations" element={
           <RecommendationPage 
-            topic="animals"
-            title="Hi {name}, since you liked {topic}, here are some recommendations for you."
+            topic="Robotics"
+            title="Hey {name}, since you liked {topic}, here are some recommendations for you."
           />
         } />
       </Routes>
