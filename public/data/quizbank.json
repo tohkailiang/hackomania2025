@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "text": "What's your preferred way to spend a wee1kend?"
+      "text": "The weekends are here! How are you spending your time?"
     },
     {
       "text": "What's your preferred way to spend a weekend2?"
@@ -20,19 +20,19 @@
     {
       "options": [
         {
-          "text": "im here cause penguin",
+          "text": "Playing games, watching movies, something that don’t require much of my brain",
           "score": [1, 2, 2, 2, 6]
         },
         {
-          "text": "im here cause swag",
+          "text": "Work on projects",
           "score": [5, 3, 2, 7, 1]
         },
         {
-          "text": "im here cause doggo",
+          "text": "Spend time with loved ones Spend time with loved ones",
           "score": [8, 2, 0, 4, 4]
         },
         {
-          "text": "im here cause meow",
+          "text": "Go out alone",
           "score": [3, 6, 6, 6, 7]
         }
       ]
