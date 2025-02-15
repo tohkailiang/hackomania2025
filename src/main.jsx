@@ -25,7 +25,6 @@ const result = new Result()
 .setTraits(["Aggressively", "Passive"]);
 
 const interactions = new Interactions();
-
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <div className="container" style={{position:'relative', zIndex:'1', display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
@@ -41,6 +40,7 @@ createRoot(document.getElementById('root')).render(
             </div>
           </>
         } />
+        <Route path="/interactions" element={<InteractionsPanel interactions={interactions} />} />
         <Route path="/results" element={<ResultsPanel result={result} />} />
       </Routes>
     </div>
