@@ -14,6 +14,8 @@ import InteractionsPanel from './components/InteractionsPanel.jsx'
 
 const user = new User();
 
+console.log(user);
+
 const result = new Result()
 .setAffinities([
   "./sprites/results/elephant.png",
@@ -37,7 +39,7 @@ createRoot(document.getElementById('root')).render(
               <GamePanel interactions={interactions}/>
             </div>
             <div style={{marginTop: 'auto', paddingBottom: '0px'}}>
-              <QuizPanel quizbank="./data/quizbank.json" />
+              <QuizPanel quizbank="./data/quizbank.json" user={user} />
             </div>
           </>
         } />

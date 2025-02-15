@@ -1,15 +1,13 @@
-import Attributes from '../systems/attributes.js';
-
 export default class User {
 
     constructor()
     {
-        this.attributesScores = Array.from({ length: Object.keys(Attributes.AttributeType).length }, () => 0);
-        this.randomstatistic;
+        this.attributesScores = [0, 0, 0, 0, 0];
     }
 
-    addScore(attributes = [])
+    addScore(attributes)
     {
+        console.log("before:", this.attributesScores);
         if(attributes.length != 5)
         {
             throw new Error("Wrong number of elements");
@@ -19,10 +17,6 @@ export default class User {
         {
             this.attributesScores[i] += attributes[i];
         }
-    }
-
-    addRandomStatistic()
-    {
-        // hardcoded statistics but putting this function here to remember how to implement
+        console.log("after:", this.attributesScores);
     }
 }
