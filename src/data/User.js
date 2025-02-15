@@ -1,4 +1,4 @@
-import Attributes from './attributes.js';
+import Attributes from '../systems/attributes.js';
 
 export default class User {
 
