@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Result from '../data/Result';
+import { useNavigate } from 'react-router-dom';
 import './ResultsPanel.css';
 
 class ResultsPanel extends React.Component {
@@ -66,13 +67,34 @@ class ResultsPanel extends React.Component {
             ))}
           </div>
         </section>
+
+        <button
+          onClick={() => this.props.navigate('/')}
+          style={{
+            width: '350px',
+            height: '66px',
+            backgroundColor: '#FF0000',
+            border: '2px solid #00FF00',
+            marginTop: '20px',
+            alignSelf: 'center'
+          }}
+        >
+          Return to Home
+        </button>
       </div>
     );
   }
 }
 
-ResultsPanel.propTypes = {
-  result: PropTypes.instanceOf(Result).isRequired,
+// Wrap ResultsPanel with navigation
+const ResultsPanelWithRouter = (props) => {
+  const navigate = useNavigate();
+  return <ResultsPanel {...props} navigate={navigate} />;
 };
 
-export default ResultsPanel;
+ResultsPanel.propTypes = {
+  result: PropTypes.instanceOf(Result).isRequired,
+  navigate: PropTypes.func
+};
+
+export default ResultsPanelWithRouter;

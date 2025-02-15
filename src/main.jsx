@@ -20,23 +20,22 @@ const result = new Result()
 .setTraits(["trait2", "trait4"]);
 
 createRoot(document.getElementById('root')).render(
-
-    <BrowserRouter>
-      <div className="container" style={{position:'relative', zIndex:'1', display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/quiz" element={
-            <>
-              <div>
-                <GamePanel />
-              </div>
-              <div style={{marginTop: 'auto', paddingBottom: '0px'}}>
-                <QuizPanel quizbank="./data/quizbank.json" />
-              </div>
-            </>
-          } />
-        </Routes>
-      </div>
-    </BrowserRouter>
-
+  <BrowserRouter>
+    <div className="container" style={{position:'relative', zIndex:'1', display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/quiz" element={
+          <>
+            <div>
+              <GamePanel />
+            </div>
+            <div style={{marginTop: 'auto', paddingBottom: '0px'}}>
+              <QuizPanel quizbank="./data/quizbank.json" />
+            </div>
+          </>
+        } />
+        <Route path="/results" element={<ResultsPanel result={result} />} />
+      </Routes>
+    </div>
+  </BrowserRouter>
 )

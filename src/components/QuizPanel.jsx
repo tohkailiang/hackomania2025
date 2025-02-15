@@ -42,7 +42,7 @@ class QuizPanel extends React.Component {
       const nextIndex = prevState.currentQuestionIndex + 1;
       if (nextIndex >= prevState.questions.length) {
         if (this.props.navigate) {
-          this.props.navigate('/');
+          this.props.navigate('/results');
         }
         return prevState;
       }
@@ -122,3 +122,5 @@ QuizPanel.propTypes = {
 };
 
 export default QuizPanelWithRouter;
+
+  
