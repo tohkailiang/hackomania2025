@@ -1,0 +1,69 @@
+.results-logo {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.results-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.results-title {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+.traits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.quotes-list {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+}
+
+.affinities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.affinity-item {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+}
+
+.review-item {
+  padding: 0.75rem;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  text-align: center;
+}

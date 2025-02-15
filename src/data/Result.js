@@ -1,5 +1,15 @@
+/**
+ * @typedef {Object} ResultProps
+ * @property {Array} affinities
+ * @property {string} logo
+ * @property {Array<string>} quotes
+ * @property {Array} reviews
+ * @property {string} title
+ * @property {Array} traits
+ */
+
 class Result {
-    constructor() {
+  constructor() {
       this.affinities = [];
       this.logo = '';
       this.quotes = [];
@@ -37,6 +47,21 @@ class Result {
       this.traits = traits;
       return this;
     }
+
+  /**
+   * Returns an object with all properties
+   * @returns {ResultProps}
+   */
+  toJSON() {
+    return {
+      affinities: this.affinities,
+      logo: this.logo,
+      quotes: this.quotes,
+      reviews: this.reviews,
+      title: this.title,
+      traits: this.traits,
+    };
   }
-  
-  export default Result;
+}
+
+export default Result;
