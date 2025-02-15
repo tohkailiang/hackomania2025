@@ -1,7 +1,5 @@
 
-class Attributes {
-
-    
+export default class Attributes {    
     // adapted from the Big Five personalities
     static AttributeType = {
         OPENNESS: 'Openness to Experience',
@@ -10,11 +8,4 @@ class Attributes {
         AGREEABLENESS: 'Agreeableness',
         NEUROTICISM: 'Neuroticism'
     };
-
-    constructor(attribute)
-    {
-        this.attribute = attribute;
-        this.score =  Array.from({ length: Object.keys(Attributes.AttributeType).length }, () => 0);
-    }
-
 }

@@ -1,4 +1,5 @@
 // best matches for each personality
+/*
 class Relations {
     constructor()
     {
@@ -20,6 +21,7 @@ class Relations {
         {
             this.relations.set(personality, []);
         }
-        this.relations.get(personality).push(...personalities);
+        this.relations.get(personality).push(...personalities)
     }
 }
+    */
