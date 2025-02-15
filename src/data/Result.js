@@ -8,8 +8,8 @@
  * @property {Array} traits
  */
 
-class Result {
-  constructor() {
+export class Result {
+    constructor() {
       this.affinities = [];
       this.logo = '';
       this.quotes = [];
@@ -62,6 +62,6 @@ class Result {
       traits: this.traits,
     };
   }
-}
-
-export default Result;
+  }
+  
+  export default Result;

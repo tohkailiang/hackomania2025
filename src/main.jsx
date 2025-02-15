@@ -10,6 +10,7 @@ import ImagePoker from './pixie/ImagePoker.jsx'
 import ResultsPanel from './components/ResultsPanel';
 import Result from './data/Result';
 import Interactions from './data/Interactions.js'
+import InteractionsPanel from './components/InteractionsPanel.jsx'
 
 const user = new User();
 
@@ -25,7 +26,6 @@ const result = new Result()
 .setTraits(["Aggressively", "Passive"]);
 
 const interactions = new Interactions();
-
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <div className="container" style={{position:'relative', zIndex:'1', display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
@@ -41,6 +41,7 @@ createRoot(document.getElementById('root')).render(
             </div>
           </>
         } />
+        <Route path="/interactions" element={<InteractionsPanel interactions={interactions} />} />
         <Route path="/results" element={<ResultsPanel result={result} />} />
       </Routes>
     </div>

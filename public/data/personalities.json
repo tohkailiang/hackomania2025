@@ -2,18 +2,21 @@
     "personalities":[
         {
             "name": "Nerd",
-            "dom_attr": [ "OPENNESS", "CONSCIENTIOUSNESS" ],
+            "bestattr": "OPENNESS",
+            "worstattr": "CONSCIENTIOUSNESS",
             "relations": [ "ProGamer" ]
 
         },
         {
             "name": "ProGamer",
-            "dom_attr": [ "EXTRAVERSION", "AGREEABLENESS"],
+            "bestattr": "EXTRAVERSION",
+            "worstattr": "AGREEABLENESS",
             "relations": [ "ChessMaster" ]
         },
         {
             "name": "ChessMaster",
-            "dom_attr":[ "NEUROTICISM", "CONSCIENTIOUSNESS" ],
+            "bestattr": "NEUROTICISM",
+            "worstattr":"CONSCIENTIOUSNESS",
             "relations": [ "Nerd", "ProGamer" ]
         }
     ]
