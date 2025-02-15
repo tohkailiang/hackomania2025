@@ -54,7 +54,13 @@ createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <div className="container" style={{position:'relative', zIndex:'1', display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+      <Route path="/" element={
+          <LandingPage 
+            logo="./sprites/pengwing.png" 
+            title="Pengwing" 
+            description="A personality quiz for fowl-lovers" 
+          />
+        } />
         {/* <Route path="/" element={<LinkCardViewer linkCards={linkCards} description="ching chong!" />} /> */}
         <Route path="/quiz" element={
           <>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
-const LandingPage = () => {
+const LandingPage = ({ logo, title, description }) => {
   const navigate = useNavigate();
 
   const handleStartQuiz = () => {
@@ -12,10 +12,12 @@ const LandingPage = () => {
   return (
     <div className="landing-page" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh' }}>
       <div>
-      <h1>Pengquiz</h1>
-      <p>We like penguins!</p>
+        <img src={logo} alt="Logo" className="landing-logo" />
+        <h1>{title}</h1>
+        <p>{description}</p>
       </div>
       <button
+        className="start-button"
         onClick={handleStartQuiz}
         style={{
           width: '350px',
