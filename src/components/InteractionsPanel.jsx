@@ -27,7 +27,7 @@ const InteractionsPanel = ({ interactions }) => {
               key={key}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 1, delay: index * 0.2 }}
               className="stat-item"
               style={{
                 border: '2px solid #ccc',
