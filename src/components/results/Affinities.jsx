@@ -1,26 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Affinities extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    const { texts } = this.props;
-    return (
-      <div>
-        {texts.map((text, index) => (
-          <div key={text}>{text}</div>
-        ))}
-      </div>
-    );
-  }
-}
+const Affinities = ({ imagePaths }) => {
+  return (
+    <div className="affinities-container">
+      {imagePaths.map((path, index) => (
+        <img
+          key={`affinity-${index}`}
+          src={path}
+          alt={`Affinity ${index + 1}`}
+          className="affinity-logo"
+          width={64}
+          height={64}
+        />
+      ))}
+    </div>
+  );
+};
 
 Affinities.propTypes = {
-  texts: PropTypes.arrayOf(PropTypes.string).isRequired
+  imagePaths: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default Affinities;

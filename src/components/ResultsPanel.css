@@ -1,18 +1,20 @@
-.results-panel {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+.results-logo {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  flex-shrink: 0; /* Prevents the logo from shrinking */
 }
 
 .results-header {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .results-logo {
-  max-width: 200px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -22,26 +24,29 @@
 }
 
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .traits-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
   list-style: none;
   padding: 0;
+  justify-content: center;
 }
 
 .quotes-list {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
+  place-items: center;
 }
 
 .affinities-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
+  justify-content: center;
 }
 
 .affinity-item {
@@ -52,11 +57,13 @@ section {
 
 .reviews-list {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
+  place-items: center;
 }
 
 .review-item {
-  padding: 1rem;
+  padding: 0.75rem;
   background-color: #f8f8f8;
   border-radius: 8px;
+  text-align: center;
 }

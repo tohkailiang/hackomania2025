@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Result from '../data/Result';
 import { useNavigate } from 'react-router-dom';
+import Logo from './results/Logo';
 import './ResultsPanel.css';
+import Affinities from './results/Affinities';
 
 class ResultsPanel extends React.Component {
   constructor(props) {
     super(props);
     const { result } = props;
-    
+
     this.state = {
       affinities: result.affinities,
       logo: result.logo,
@@ -23,10 +25,11 @@ class ResultsPanel extends React.Component {
     const { affinities, logo, quotes, reviews, title, traits } = this.state;
     return (
       <div className="results-panel">
-        <div className="results-header">
-          <img src={logo} alt={title} className="results-logo" />
-          <h1 className="results-title">{title}</h1>
-        </div>
+        <div className="results-content">
+          <div className="results-header">
+            <Logo imagePath={logo} />
+            <h1 className="results-title">{title}</h1>
+          </div>
 
         <section className="traits-section">
           <h2>Traits</h2>
@@ -47,15 +50,9 @@ class ResultsPanel extends React.Component {
         </section>
 
         <section className="affinities-section">
-          <h2>Affinities</h2>
-          <div className="affinities-list">
-            {affinities.map((affinity, index) => (
-              <div key={`affinity-${index}`} className="affinity-item">
-                {affinity}
-              </div>
-            ))}
-          </div>
-        </section>
+            <h2>Affinities</h2>
+            <Affinities imagePaths={affinities} />
+          </section>
 
         <section className="reviews-section">
           <h2>Reviews</h2>
@@ -69,24 +66,26 @@ class ResultsPanel extends React.Component {
         </section>
 
         <button
-          onClick={() => this.props.navigate('/')}
-          style={{
-            width: '350px',
-            height: '66px',
-            backgroundColor: '#FF0000',
-            border: '2px solid #00FF00',
-            marginTop: '20px',
-            alignSelf: 'center'
-          }}
-        >
-          Return to Home
-        </button>
+            onClick={() => this.props.navigate('/')}
+            style={{
+              width: '350px',
+              maxWidth: '100%',  // Add this line
+              height: '66px',
+              backgroundColor: '#FF0000',
+              border: '2px solid #00FF00',
+              marginTop: '20px',
+              marginBottom: '20px',  // Add this line
+              alignSelf: 'center'
+            }}
+          >
+            Return to Home
+          </button>
+        </div>
       </div>
     );
   }
 }
 
-// Wrap ResultsPanel with navigation
 const ResultsPanelWithRouter = (props) => {
   const navigate = useNavigate();
   return <ResultsPanel {...props} navigate={navigate} />;

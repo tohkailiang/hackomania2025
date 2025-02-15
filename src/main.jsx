@@ -12,12 +12,15 @@ import Result from './data/Result';
 const user = new User();
 
 const result = new Result()
-.setAffinities(["2342", "234324"])
-.setLogo("logos")
-.setQuotes(["quotes2", "quotes4"])
-.setReviews(["review2", "review22"])
-.setTitle("title")
-.setTraits(["trait2", "trait4"]);
+.setAffinities([
+  "./sprites/results/elephant.png",
+  "./sprites/results/honeybee.png"
+])
+.setLogo("./sprites/results/raccoon.png")
+.setQuotes(["I need friends...", "But I don't want to leave my bed."])
+.setReviews(["So cute!", "Chickens are superior tbh."])
+.setTitle("Pengwing")
+.setTraits(["Aggressively", "Passive"]);
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
