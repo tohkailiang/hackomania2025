@@ -34,7 +34,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/quiz" element={
           <>
             <div>
-              <GamePanel />
+              <GamePanel interactions={interactions}/>
             </div>
             <div style={{marginTop: 'auto', paddingBottom: '0px'}}>
               <QuizPanel quizbank="./data/quizbank.json" />

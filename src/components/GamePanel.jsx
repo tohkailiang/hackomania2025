@@ -7,7 +7,7 @@ import ImageToggle from '../pixie/ImageToggle.jsx';
 import ImageRemover from '../pixie/ImageRemover.jsx';
 
 
-export default function GamePanel()
+export default function GamePanel({interactions})
 {
     const [count0, setCount0] = useState(0);
     const [count1, setCount1] = useState(0);
@@ -35,6 +35,7 @@ export default function GamePanel()
                 {
                     changedoor("dooropen.png");
                 }
+                ++interactions.doorClicks;
             }}
           ></ImageToggle>
           
@@ -50,11 +51,11 @@ export default function GamePanel()
         </Container>
 
 
-        <ImageRemover X={250} Y={335} image="cup.png"></ImageRemover>
-        <ImageRemover X={380} Y={335} image="cup.png"></ImageRemover>
-        <ImageRemover X={700} Y={335} image="cup.png"></ImageRemover>
-        <ImageRemover X={1120} Y={335} image="cup.png"></ImageRemover>
-        <ImageRemover X={1180} Y={335} image="cup.png"></ImageRemover>
+        <ImageRemover X={250} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
+        <ImageRemover X={380} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
+        <ImageRemover X={700} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
+        <ImageRemover X={1120} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
+        <ImageRemover X={1180} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
         </Stage>
       );
 }

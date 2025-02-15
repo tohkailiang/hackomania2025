@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { BlurFilter, TextStyle } from 'pixi.js';
 import { Stage, Sprite, Container, Text } from '@pixi/react';
 import { useInterval } from 'usehooks-ts';
+import gsap from 'gsap';
 
-export default function ImageRemover({X, Y, image})
+export default function ImageRemover({X, Y, image, interactions})
 {
     const [scale, setScale] = useState(1);
     const [mouseoverScale, setMouseover] = useState(1);
     const [remove, setRemove] = useState(false);
+    const spriteRef = useRef(null);
 
+    /*
     useInterval(
         () => {
           // Your custom logic here
@@ -17,6 +20,7 @@ export default function ImageRemover({X, Y, image})
         // Delay in milliseconds or null to stop it
         remove ? 0.016 : null,
       )
+        */
 
     if(scale > 0)
     {
@@ -26,24 +30,40 @@ export default function ImageRemover({X, Y, image})
                 <Sprite
                     image={image}
                     x={X}
-                    y={Y - (1 - scale) * 100}
+                    y={Y}
                     anchor={0.5}
-                    scale={mouseoverScale}
-                    alpha={scale}
                     interactive={true}
-                    pointerdown={()=>
+                    ref={spriteRef}
+                    pointerup={()=>
                     {
+                        interactions.cupsPickedup++;
                         setRemove(true);
+                        gsap.to(spriteRef.current, {
+                            y: Y - 50,
+                            alpha: 0,
+                            duration: 1,
+                            ease: "elastic.out(1, 0.3)"
+                        });
                     }
                     }
                     onpointerenter={()=>
                     {
-                        setMouseover(1.1);
+                        if(!remove)
+                        gsap.to(spriteRef.current, {
+                            y: Y - 10,
+                            duration: 1,
+                            ease: "elastic.out(1, 0.3)"
+                        });
                     }
                     }
                     onpointerleave={()=>
                     {
-                        setMouseover(1);
+                        if(!remove)
+                        gsap.to(spriteRef.current, {
+                            y: Y,
+                            duration: 1,
+                            ease: "elastic.out(1, 0.3)"
+                        });
                     }
                     }
                     >
