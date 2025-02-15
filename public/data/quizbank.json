@@ -1,26 +1,111 @@
 {
   "questions": [
     "why am i here?",
-    "who are you?",
+    "why r u hear??",
     "where am i?",
     "what are u?",
     "when go home?"
   ],
   "optionSets": [
     {
-      "options": ["A1", "B1", "C1"]
+      "options": [
+        {
+          "text": "im here cause penguin",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "im here cause swag",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "im here cause doggo",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "im here cause meow",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
     },
     {
-      "options": ["A2", "B2", "C2"]
+      "options": [
+        {
+          "text": "im here cause penguin",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "im here cause swag",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "im here cause doggo",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "im here cause meow",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
     },
     {
-      "options": ["A3", "B3", "C3"]
+      "options": [
+        {
+          "text": "im here cause penguin",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "im here cause swag",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "im here cause doggo",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "im here cause meow",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
     },
     {
-      "options": ["A4", "B4", "C4"]
+      "options": [
+        {
+          "text": "im here cause penguin",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "im here cause swag",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "im here cause doggo",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "im here cause meow",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
     },
     {
-      "options": ["A5", "B5", "C5"]
+      "options": [
+        {
+          "text": "im here cause penguin",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "im here cause swag",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "im here cause doggo",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "im here cause meow",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
     }
   ] 
 }
