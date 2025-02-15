@@ -73,7 +73,7 @@ createRoot(document.getElementById('root')).render(
           </>
         } />
         <Route path="/interactions" element={<InteractionsPanel interactions={interactions} />} />
-        <Route path="/results" element={<ResultsPanel result={result} user={user}/>} />
+        <Route path="/results" element={<ResultsPanel result={result} />} />
         <Route path="/redirect" element={<RedirectPanel />} />
         <Route path="/recommendations" element={
           <RecommendationPage 

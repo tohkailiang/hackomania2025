@@ -6,8 +6,9 @@ export default class Personality
         this.bestattr;
         this.worstattr;
 
+        ///home/anggun/hackomania2025/public/sprites/results/elephant.png
         this.relations = [];
-        this.logo = name;
+        this.logo = "./sprites/results/" + name.toLowerCase() +".png";
         this.quotes = [];
         this.reviews = [];
         this.traits = [];

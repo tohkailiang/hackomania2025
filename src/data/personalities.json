@@ -1,32 +1,97 @@
 {
     "personalities":[
         {
-            "name": "Nerd",
+            "name": "Raccoon",
             "bestattr": "OPENNESS",
             "worstattr": "CONSCIENTIOUSNESS",
             "relations": [ "ProGamer" ],
             "reviews": ["areview1", "areview1"],
             "quotes": ["aquote1", "aquote2"],
             "traits":["atraits1","atraits2"]
-
         },
         {
-            "name": "ProGamer",
+            "name": "Axolotl",
+            "bestattr": "OPENNESS",
+            "worstattr": "EXTRAVERSION",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
+        },
+        {
+            "name": "Octopus",
+            "bestattr": "OPENNESS",
+            "worstattr": "AGREEABLENESS",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
+        },
+        {
+            "name": "Elephant",
+            "bestattr": "OPENNESS",
+            "worstattr": "NEUROTICISM",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
+        },
+        {
+            "name": "Owl",
+            "bestattr": "CONSCIENTIOUSNESS",
+            "worstattr": "EXTRAVERSION",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
+        },
+        {
+            "name": "Tiger",
+            "bestattr": "CONSCIENTIOUSNESS",
+            "worstattr": "AGREEABLENESS",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
+        },
+        {
+            "name": "Honeybee",
+            "bestattr": "CONSCIENTIOUSNESS",
+            "worstattr": "NEUROTICISM",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
+        },
+        {
+            "name": "Peacock",
             "bestattr": "EXTRAVERSION",
             "worstattr": "AGREEABLENESS",
-            "relations": [ "ChessMaster" ],
-            "reviews": ["breview1", "breview2"],
-            "quotes":["bquote1", "bquote2"],
-            "traits":["btraits1","btraits2"]
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
         },
         {
-            "name": "ChessMaster",
-            "bestattr": "NEUROTICISM",
-            "worstattr":"OPENNESS",
-            "relations": [ "Nerd", "ProGamer" ],
-            "reviews": ["creview1", "creview1"],
-            "quotes": ["cquote1", "cquote2"],
-            "traits":["ctraits1","ctraits2"]
+            "name": "Golden Retriever",
+            "bestattr": "EXTRAVERSION",
+            "worstattr": "NEUROTICISM",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
+        },
+        {
+            "name": "Manatee",
+            "bestattr": "AGREEABLENESS",
+            "worstattr": "NEUROTICISM",
+            "relations": [ "ProGamer" ],
+            "reviews": ["areview1", "areview1"],
+            "quotes": ["aquote1", "aquote2"],
+            "traits":["atraits1","atraits2"]
         }
+        
+
+
     ]
 }
