@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import Question from './Question';
 import Options from './Options';
+import ResultsPanel from './ResultsPanel';
 
 class QuizPanel extends React.Component {
   constructor(props) {
@@ -41,7 +42,7 @@ class QuizPanel extends React.Component {
       const nextIndex = prevState.currentQuestionIndex + 1;
       if (nextIndex >= prevState.questions.length) {
         if (this.props.navigate) {
-          this.props.navigate('/');
+          this.props.navigate('/results');
         }
         return prevState;
       }
@@ -121,3 +122,5 @@ QuizPanel.propTypes = {
 };
 
 export default QuizPanelWithRouter;
+
+  

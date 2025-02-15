@@ -1,17 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class Logo extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Logo = ({ imagePath }) => {
+  return (
+    <img 
+      src={imagePath} 
+      alt="Result Logo" 
+      className="results-logo"
+      width={128}
+      height={128}
+    />
+  );
+};
 
-  render() {
-    return (
-      <div>
-      </div>
-    );
-  }
-}
+Logo.propTypes = {
+  imagePath: PropTypes.string.isRequired
+};
 
 export default Logo;

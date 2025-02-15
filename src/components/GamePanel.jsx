@@ -18,25 +18,43 @@ export default function GamePanel()
     const [doorstate, opendoor] = useState(false);
     const [doorpng, changedoor] = useState("doorclose.png");
 
-    return (
-        <Stage width={800} height={400} options={{ background: 0x1099bb }}>
+    const background = "gamebackground.png";
 
-          <ImageToggle X={400} Y={200} image={doorpng} 
+    return (
+        <Stage width={1500} height={560} options={{ background: 0xffffff }}>
+
+          <ImageToggle X={750} Y={280} image={doorpng} 
           toggleImage={()=>
             {
                 opendoor(!doorstate);
                 if(doorstate)
                 {
-                    changedoor("dooropen.png");
+                    changedoor("doorclose.png");
                 }
                 else
                 {
-                    changedoor("doorclose.png");
+                    changedoor("dooropen.png");
                 }
             }}
           ></ImageToggle>
+          
+          
+        <Container x={0} y={0}>
+            <Sprite
+                image={background}
+                x={750}
+                y={280}
+                anchor={0.5}
+                >
+            </Sprite>
+        </Container>
 
-          <ImageRemover X={100} Y={100} image="doorclose.png"></ImageRemover>
+
+        <ImageRemover X={250} Y={335} image="cup.png"></ImageRemover>
+        <ImageRemover X={380} Y={335} image="cup.png"></ImageRemover>
+        <ImageRemover X={700} Y={335} image="cup.png"></ImageRemover>
+        <ImageRemover X={1120} Y={335} image="cup.png"></ImageRemover>
+        <ImageRemover X={1180} Y={335} image="cup.png"></ImageRemover>
         </Stage>
       );
 }
