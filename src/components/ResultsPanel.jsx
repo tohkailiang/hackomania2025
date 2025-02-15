@@ -31,8 +31,9 @@ class ResultsPanel extends React.Component {
         <div className="results-content">
           <h1 className="results-title">{title}</h1>
 
+          <Logo imagePath={logo} />
+
           <section className="quotes-section">
-            <h2>Quotes</h2>
             <div className="quotes-grid">
               {quotes.map((quote, index) => (
                 <blockquote key={`quote-${index}`} className="quote-item">
@@ -40,10 +41,6 @@ class ResultsPanel extends React.Component {
                 </blockquote>
               ))}
             </div>
-          </section>
-
-          <section className="logo-section">
-            <Logo imagePath={logo} />
           </section>
 
           <section className="traits-section">
@@ -55,21 +52,23 @@ class ResultsPanel extends React.Component {
             </ul>
           </section>
 
-          <section className="affinities-section">
-            <h2>Affinities</h2>
-            <Affinities imagePaths={affinities} />
-          </section>
+          <div className="side-by-side-container">
+            <section className="affinities-section">
+              <h2>Affinities</h2>
+              <Affinities imagePaths={affinities} />
+            </section>
 
-          <section className="reviews-section">
-            <h2>Reviews</h2>
-            <div className="reviews-grid">
-              {reviews.map((review, index) => (
-                <div key={`review-${index}`} className="review-item">
-                  {review}
-                </div>
-              ))}
-            </div>
-          </section>
+            <section className="reviews-section">
+              <h2>Reviews</h2>
+              <div className="reviews-grid">
+                {reviews.map((review, index) => (
+                  <div key={`review-${index}`} className="review-item">
+                    {review}
+                  </div>
+                ))}
+              </div>
+            </section>
+          </div>
 
           <button
             onClick={() => this.props.navigate('/redirect')}
