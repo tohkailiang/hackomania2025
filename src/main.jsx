@@ -9,6 +9,7 @@ import User from './data/User.js'
 import ResultsPanel from './components/ResultsPanel';
 import Result from './data/Result';
 import Interactions from './data/Interactions.js'
+import InteractionsPanel from './components/InteractionsPanel.jsx'
 
 const user = new User();
 
@@ -33,7 +34,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/quiz" element={
           <>
             <div>
-              <GamePanel />
+              <GamePanel interactions={interactions}/>
             </div>
             <div style={{marginTop: 'auto', paddingBottom: '0px'}}>
               <QuizPanel quizbank="./data/quizbank.json" />
