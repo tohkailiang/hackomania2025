@@ -1,19 +1,38 @@
-.results-panel {
-  padding: 2rem;
+.logo-section {
+  position: relative;
+  height: 128px;
+  margin: 2rem 0;
 }
 
-.results-content {
-  max-width: 800px;
-  margin: 0 auto;
+.logo-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.results-logo {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+}
+
+.side-by-side-container {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
+  margin: 2rem 0;
 }
 
-.results-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 0;
+.affinities-section,
+.reviews-section {
+  flex: 1;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .quotes-grid {
