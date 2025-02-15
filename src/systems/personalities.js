@@ -1,6 +1,9 @@
-import personalitiesData from '../../public/data/personalities.json';
-import Personality from './personality.js'
-import Result from './data/Result.js'
+import personalitiesData from '../data/personalities.json';
+import Personality from './personality.js';
+import Result from '../data/Result.js';
+import User from '../data/User.js';
+import Attributes from './attributes.js';
+
 
 // this is the thing you will get in the end
 export class Personalities {
@@ -8,6 +11,7 @@ export class Personalities {
     {
         this.personalities = [];
         this.counter= 0;
+        this.personalities = loadPersonalities();
     }
 
     add(personality)
@@ -17,19 +21,23 @@ export class Personalities {
         this.counter += 1;
         this.personalities.push(personality);
     }
-    
+
     generatePersonality(user)
     {
-        const bestAttribute = Math.max(...user.attributesScores);
-        const worstAttribute = Math.min(...user.attributesScores);
-
-        return this.getPersonalityBasedOnAttribute(bestAttribute, worstAttribute);
+        console.log(user);
+        const attributeScores = user.getAttributesScores();
+        const bestAttribute = Math.max(...user.getAttributesScores());
+        const worstAttribute = Math.min(...user.getAttributesScores());
+        const bestAttrIndex = attributeScores.indexOf(bestAttribute);
+        const worstAttrIndex = attributeScores.indexOf(worstAttribute);
+        var meep = this.getPersonalityBasedOnAttribute(bestAttrIndex, worstAttrIndex);
+        console.log(meep);
+        return meep;
     }
 
-    giveResult(user)
+    giveResult(user, result)
     {
         const personality = this.generatePersonality(user);
-        var result = new Result();
         result.setAffinities(personality.relations);
         result.setLogo(personality.logo);
         result.setQuotes(personality.quotes);
@@ -41,19 +49,42 @@ export class Personalities {
 
     getPersonalityBasedOnAttribute(bestAttri, worstAttri)
     {
+        console.log(this.personalities);
+            // Get the enum values array to access by index
+    const attributeTypes = Object.values(Attributes.AttributeType);
+    const bestAttrType = attributeTypes[bestAttri];
+    const worstAttrType = attributeTypes[worstAttri];
+        console.log("best attri: " + bestAttrType);
+        console.log("worst attri: " + worstAttrType);
         for(let i = 0; i < this.personalities.length; ++i)
-        {
-            if(this.personalities[i].bestattr != bestAttri)
             {
-                continue;
+                //console.log("checking");
+                //console.log(this.personalities[i]);
+                //console.log(this.personalities[i].bestattr);
+                //console.log(this.personalities[i].worstattr);
+                if(Attributes.AttributeType[this.personalities[i].bestattr] === bestAttrType
+                   && Attributes.AttributeType[this.personalities[i].worstattr] === worstAttrType) {
+                    //console.log("meep1");
+                    return this.personalities[i];
+                }
             }
 
-            if(this.personalities[i] != worstAttri)
+            // If no exact match is found, return the first personality that matches best attribute
+            for(let i = 0; i < this.personalities.length; ++i)
             {
-                continue;
+                if(Attributes.AttributeType[this.personalities[i].bestattr] === bestAttrType) {
+                    //console.log("meep2");
+                    return this.personalities[i];
+                }
             }
-            return this.personalities[i];
-        }
+
+            // Fallback to first personality if no match found
+            if (this.personalities.length > 0) {
+                //console.log("meep3");
+                return this.personalities[0];
+            }
+
+            throw new Error('No personalities available');
     }
 
 }
@@ -62,12 +93,12 @@ export function loadPersonalities() {
     try {
         // Use the imported JSON data directly
         const data = personalitiesData;
-        
+
         // Validate and convert to Personality instances
         if (!data.personalities || !Array.isArray(data.personalities)) {
             throw new Error('Invalid format: personalities must be an array under "personalities" key');
         }
-        
+
         return data.personalities.map(p => {
             if (!p.name) {
                 throw new Error(`Invalid personality data: Missing required fields for ${p.name || 'unnamed personality'}`);
