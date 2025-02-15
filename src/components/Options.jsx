@@ -4,12 +4,17 @@ import OptionButton from './OptionButton';
 
 const Options = ({ options, onOptionClick }) => {
   return (
-    <div className="options-container">
-      {options.map((option, index) => (
+    <div className="options-container" style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2, 1fr)',
+      gap: '10px',
+      padding: '10px'
+    }}>
+      {[...Array(4)].map((_, index) => (
         <OptionButton
           key={index}
-          text={option.text}
-          onClick={() => onOptionClick(option)}
+          text={options[index]?.text || ''}
+          onClick={() => options[index] && onOptionClick(options[index])}
         />
       ))}
     </div>

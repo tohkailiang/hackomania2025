@@ -1,36 +1,35 @@
 import React from 'react';
-import QuizPanel from './QuizPanel';
+import { useNavigate } from 'react-router-dom';
+import './LandingPage.css';
 
-class LandingPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showQuiz: false
-    };
+const LandingPage = () => {
+  const navigate = useNavigate();
+
+  const handleStartQuiz = () => {
+    navigate('/quiz');
   }
 
-  handleStartQuiz = () => {
-    this.setState({ showQuiz: true });
-  }
-
-  render() {
-    if (this.state.showQuiz) {
-      return <QuizPanel quizbank="./data/quizbank.json" />;
-    }
-
-    return (
-      <div className="landing-page">
-        <h1>Welcome to the Quiz App</h1>
-        <p>Test your knowledge with our interactive quiz!</p>
-        <button 
-          onClick={this.handleStartQuiz}
-          className="start-button"
-        >
-          Start Quiz
-        </button>
+  return (
+    <div className="landing-page" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100vh' }}>
+      <div>
+      <h1>Pengquiz</h1>
+      <p>We like penguins!</p>
       </div>
-    );
-  }
+      <button
+        onClick={handleStartQuiz}
+        style={{
+          width: '350px',
+          height: '66px',
+          backgroundColor: '#FF0000',
+          border: '2px solid #00FF00',
+          marginBottom: '40px',
+          alignSelf: 'center'
+        }}
+      >
+        Start Quiz
+      </button>
+    </div>
+  );
 }
 
 export default LandingPage;

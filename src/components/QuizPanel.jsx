@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 import Question from './Question';
 import Options from './Options';
 
@@ -39,8 +40,9 @@ class QuizPanel extends React.Component {
     this.setState(prevState => {
       const nextIndex = prevState.currentQuestionIndex + 1;
       if (nextIndex >= prevState.questions.length) {
-        // Handle quiz completion here
-        console.log('Quiz completed!');
+        if (this.props.navigate) {
+          this.props.navigate('/');
+        }
         return prevState;
       }
       return {
@@ -52,32 +54,70 @@ class QuizPanel extends React.Component {
   render() {
     const { isLoading, questions, optionSets, currentQuestionIndex } = this.state;
 
+    const containerStyle = {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '20px',
+    };
+
+    const panelStyle = {
+      width: '600px',
+      height: '250px',
+      borderRadius: '10px',
+      backgroundColor: 'white',
+      boxShadow: '0 0 10px rgba(0,0,0,0.1)',
+      display: 'flex',
+      flexDirection: 'column',
+      padding: '20px',
+      boxSizing: 'border-box'
+    };
+
+    const questionContainerStyle = {
+      flex: 1,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    };
+
+    const optionsContainerStyle = {
+      paddingBottom: '0px'
+    };
+
     if (isLoading) {
-      return <div>Loading...</div>;
+      return <div style={containerStyle}><div style={panelStyle}>Loading...</div></div>;
     }
 
     if (questions.length === 0 || optionSets.length === 0) {
-      return <div>No questions available</div>;
+      return <div style={containerStyle}><div style={panelStyle}>No questions available</div></div>;
     }
 
     return (
-      <div>
-        <div>
+      <div style={containerStyle}>
+        <div style={panelStyle}>
+          <div style={questionContainerStyle}>
           <Question text={questions[currentQuestionIndex]} />
         </div>
-        <div>
-          <Options 
-            options={optionSets[currentQuestionIndex].options} 
+          <div style={optionsContainerStyle}>
+          <Options
+            options={optionSets[currentQuestionIndex].options}
             onOptionClick={this.handleOptionClick}
           />
         </div>
+      </div>
       </div>
     );
   }
 }
 
-QuizPanel.propTypes = {
-  quizbank: PropTypes.string.isRequired
+const QuizPanelWithRouter = (props) => {
+  const navigate = useNavigate();
+  return <QuizPanel {...props} navigate={navigate} />;
 };
 
-export default QuizPanel;
+QuizPanel.propTypes = {
+  quizbank: PropTypes.string.isRequired,
+  navigate: PropTypes.func
+};
+
+export default QuizPanelWithRouter;
