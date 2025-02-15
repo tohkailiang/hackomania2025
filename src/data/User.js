@@ -19,4 +19,9 @@ export default class User {
         }
         console.log("after:", this.attributesScores);
     }
+
+    getAttributesScores()
+    {
+        return this.attributesScores;
+    }
 }

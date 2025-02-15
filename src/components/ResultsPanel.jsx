@@ -5,12 +5,15 @@ import { useNavigate } from 'react-router-dom';
 import Logo from './results/Logo';
 import './ResultsPanel.css';
 import Affinities from './results/Affinities';
+import { Personalities } from '../systems/personalities.js';
+import User from '../data/User';
 
 class ResultsPanel extends React.Component {
   constructor(props) {
     super(props);
-    const { result } = props;
-
+    const { result, user } = props;
+    const personalities = new Personalities();
+    personalities.giveResult(user, result);
     this.state = {
       affinities: result.affinities,
       logo: result.logo,
@@ -93,6 +96,7 @@ const ResultsPanelWithRouter = (props) => {
 
 ResultsPanel.propTypes = {
   result: PropTypes.instanceOf(Result).isRequired,
+  user: PropTypes.instanceOf(User).isRequired,
   navigate: PropTypes.func
 };
 
