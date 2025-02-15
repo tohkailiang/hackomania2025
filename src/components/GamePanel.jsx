@@ -5,6 +5,7 @@ import { Stage, Sprite, Container, Text } from '@pixi/react';
 import NumberClicker from '../pixie/NumberClicker.jsx';
 import ImageToggle from '../pixie/ImageToggle.jsx';
 import ImageRemover from '../pixie/ImageRemover.jsx';
+import Darkness from '../pixie/Darkness.jsx';
 
 
 export default function GamePanel({interactions})
@@ -56,6 +57,7 @@ export default function GamePanel({interactions})
         <ImageRemover X={700} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
         <ImageRemover X={1120} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
         <ImageRemover X={1180} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
+        <Darkness lightsOn={false}></Darkness>
         </Stage>
       );
 }

@@ -2,7 +2,7 @@ import { useState, useRef } from 'react'
 import { Stage, Sprite, Container, Text } from '@pixi/react';
 import gsap from 'gsap';
 
-export default function ImagePoker({image}) {
+export default function ImagePoker({image, interactions, isWhiteChick}) {
     const [isHovered, setIsHovered] = useState(false);
     const spriteRef = useRef(null);
 
@@ -16,6 +16,27 @@ export default function ImagePoker({image}) {
         scale={0.5}
         interactive={true}
                 ref={spriteRef}
+                onpointerup={()=>
+                {
+                    if(spriteRef.current.y >= 175)
+                    {
+                        if(isWhiteChick)
+                        {
+                            interactions.whiteChickenClicks++;
+                        }
+                        else
+                        {
+                            interactions.brownChickenClicks++;
+                        }
+                        gsap.to(spriteRef.current, {
+                            y: 150,
+                            duration: 0.1,
+                            yoyo: true,
+                            repeat:1,
+                        });
+                    }
+                }
+                }
                 onpointerenter={() => {
                     gsap.to(spriteRef.current, {
                         angle: 10,
