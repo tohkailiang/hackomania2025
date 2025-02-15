@@ -12,7 +12,7 @@ export default function ImagePusher({X, Y, image, interactions, direction})
         <Container x={0} y={0}>
         <Sprite
         image={image}
-        x={pushed?X + 50 * direction:X}
+        x={X}
         y={Y}
         anchor={0.5}
         scale={{x:direction,y:1}}
@@ -22,13 +22,13 @@ export default function ImagePusher({X, Y, image, interactions, direction})
         {
             if(!pushed)
             {
-                /*
+                
                 gsap.fromTo(spriteRef.current, {x:X}, {
                     x: X + 50 * direction,
                     duration: 1,
                     ease: "elastic.out(1, 1)"
                 });
-                */
+                
                 setPush(true);
                 interactions.chairsPushed++;
                 gsap.to(spriteRef.current, {
