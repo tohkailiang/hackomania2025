@@ -1,25 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Question extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: props.text
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        {this.state.text}
-      </div>
-    );
-  }
-}
+const Question = ({ text }) => {
+  return (
+    <div>
+      {text.text}
+    </div>
+  );
+};
 
 Question.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.shape({
+    text: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default Question;

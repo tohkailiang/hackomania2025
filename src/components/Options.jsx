@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import OptionButton from './OptionButton';
 
-const Options = ({ options }) => {
+const Options = ({ options, onOptionClick }) => {
   return (
-    <div>
+    <div className="options-container">
       {options.map((option, index) => (
-        <button key={index}>
-          {option.text}
-        </button>
+        <OptionButton
+          key={index}
+          text={option.text}
+          onClick={() => onOptionClick(option)}
+        />
       ))}
     </div>
   );
@@ -19,7 +22,8 @@ Options.propTypes = {
       text: PropTypes.string.isRequired,
       score: PropTypes.arrayOf(PropTypes.number).isRequired
     })
-  ).isRequired
+  ).isRequired,
+  onOptionClick: PropTypes.func.isRequired
 };
 
 export default Options;
