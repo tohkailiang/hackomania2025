@@ -7,18 +7,18 @@ export default function ImagePoker({image, interactions, isWhiteChick}) {
     const spriteRef = useRef(null);
 
     return(
-        <Stage width={300} height={350} options={{ background: 0xffffff, backgroundAlpha: 0}}>
+        <Stage width={300} height={500} options={{ background: 0xffffff, backgroundAlpha: 0}}>
             <Sprite
         image={image}
         x={150}
-        y={175}
+        y={300}
         anchor={(0.5, 0.5)}
         scale={0.5}
         interactive={true}
                 ref={spriteRef}
                 onpointerup={()=>
                 {
-                    if(spriteRef.current.y >= 175)
+                    if(spriteRef.current.y >= 300)
                     {
                         if(isWhiteChick)
                         {
@@ -29,7 +29,7 @@ export default function ImagePoker({image, interactions, isWhiteChick}) {
                             interactions.brownChickenClicks++;
                         }
                         gsap.to(spriteRef.current, {
-                            y: 150,
+                            y: 250,
                             duration: 0.1,
                             yoyo: true,
                             repeat:1,

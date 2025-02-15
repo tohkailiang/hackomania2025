@@ -14,5 +14,9 @@ export const interactionDisplayConfig = {
   doorClicks: {
     label: "Door Interactions",
     formatMessage: (count) => `You have opened the door ${count} times!`
+  },
+  chairsPushed: {
+    label: "Chairs Pushed",
+    formatMessage: (count) => `You have pushed in ${count} chairs!`
   }
 };

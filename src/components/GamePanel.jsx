@@ -5,7 +5,7 @@ import { Stage, Sprite, Container, Text } from '@pixi/react';
 import NumberClicker from '../pixie/NumberClicker.jsx';
 import ImageToggle from '../pixie/ImageToggle.jsx';
 import ImageRemover from '../pixie/ImageRemover.jsx';
-import Darkness from '../pixie/Darkness.jsx';
+import ImagePusher from '../pixie/ImagePusher.jsx';
 
 
 export default function GamePanel({interactions})
@@ -25,19 +25,7 @@ export default function GamePanel({interactions})
         <Stage width={1500} height={560} options={{ background: 0xffffff }}>
 
           <ImageToggle X={750} Y={280} image={doorpng} 
-          toggleImage={()=>
-            {
-                opendoor(!doorstate);
-                if(doorstate)
-                {
-                    changedoor("doorclose.png");
-                }
-                else
-                {
-                    changedoor("dooropen.png");
-                }
-                ++interactions.doorClicks;
-            }}
+          interactions={interactions}
           ></ImageToggle>
           
           
@@ -52,12 +40,23 @@ export default function GamePanel({interactions})
         </Container>
 
 
-        <ImageRemover X={250} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
-        <ImageRemover X={380} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
+        <ImageRemover X={280} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
+        <ImageRemover X={350} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
         <ImageRemover X={700} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
         <ImageRemover X={1120} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
         <ImageRemover X={1180} Y={335} image="cup.png" interactions={interactions}></ImageRemover>
-        <Darkness lightsOn={false}></Darkness>
+
+        <ImagePusher X={180} Y={420} image="sprites/chair.png" interactions={interactions} direction={1}></ImagePusher>
+        <Sprite x={315} y={440} image="sprites/table.png" anchor={0.5}></Sprite>
+        <ImagePusher X={450} Y={420} image="sprites/chair.png" interactions={interactions} direction={-1}></ImagePusher>
+        
+        <ImagePusher X={580} Y={420} image="sprites/chair.png" interactions={interactions} direction={1}></ImagePusher>
+        <Sprite x={715} y={440} image="sprites/table.png" anchor={0.5}></Sprite>
+        <ImagePusher X={850} Y={420} image="sprites/chair.png" interactions={interactions} direction={-1}></ImagePusher>
+        
+        <ImagePusher X={1010} Y={420} image="sprites/chair.png" interactions={interactions} direction={1}></ImagePusher>
+        <Sprite x={1145} y={440} image="sprites/table.png" anchor={0.5}></Sprite>
+        <ImagePusher X={1280} Y={420} image="sprites/chair.png" interactions={interactions} direction={-1}></ImagePusher>
         </Stage>
       );
 }
