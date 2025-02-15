@@ -22,6 +22,7 @@ class QuizPanel extends React.Component {
         return response.json();
       })
       .then(data => {
+        console.log(data);
         this.setState({
           isLoading: false,
           question: data.questions[1],
