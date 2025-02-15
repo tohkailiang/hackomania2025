@@ -1,38 +1,53 @@
 {
   "questions": [
     {
-      "text": "The weekends are here! How are you spending your time?"
+      "text": "Someone just called you a nerd.. What were you seen doing?"
     },
     {
-      "text": "What's your preferred way to spend a weekend2?"
+      "text": "Nerd or not, you’re excited for an event! What is it?"
     },
     {
-      "text": "What's your preferred way to spend a weeken3d?"
+      "text": "Besides the contents of the actual event, you also look forward most to.."
     },
     {
-      "text": "What's your preferred way to spend a weeke4nd?"
+      "text": "You finally arrived at the event. What do you do first?"
     },
     {
-      "text": "What's your preferred way to spend a we5ekend?"
+      "text": "After some time, you realised there’s no one you’re familiar with. You.."
+    },
+    {
+      "text": "An impromptu group project happens?! Regardless, you feel most confident in contributing.."
+    },
+    {
+      "text": "The event is over.. Or is it? There’s an afterparty and you’re seen…"
+    },
+    {
+      "text": "Time to go home! Tomorrow is a weekend, and you’re planning to spend it by.."
+    },
+    {
+      "text": "Your friend suddenly calls you to go for drinks.. It’s 3am.. You reply.."
+    },
+    {
+      "text": "Home sweet home.. After settling down, you.."
     }
   ],
   "optionSets": [
     {
       "options": [
         {
-          "text": "Playing games, watching movies, something that don’t require much of my brain",
+          "text": "Coding",
           "score": [1, 2, 2, 2, 6]
         },
         {
-          "text": "Work on projects",
+          "text": "Gaming",
           "score": [5, 3, 2, 7, 1]
         },
         {
-          "text": "Spend time with loved ones Spend time with loved ones",
+          "text": "Research",
           "score": [8, 2, 0, 4, 4]
         },
         {
-          "text": "Go out alone",
+          "text": "Collecting merch",
           "score": [3, 6, 6, 6, 7]
         }
       ]
@@ -40,19 +55,19 @@
     {
       "options": [
         {
-          "text": "im here cause penguin2",
+          "text": "Hackomania :) GeeksHacking hi :)",
           "score": [1, 2, 2, 2, 6]
         },
         {
-          "text": "im here cause swag",
+          "text": "Anime Festival Asia",
           "score": [5, 3, 2, 7, 1]
         },
         {
-          "text": "im here cause doggo",
+          "text": "Gamescom Asia",
           "score": [8, 2, 0, 4, 4]
         },
         {
-          "text": "im here cause meow",
+          "text": "Singapore Science Festival",
           "score": [3, 6, 6, 6, 7]
         }
       ]
@@ -60,19 +75,19 @@
     {
       "options": [
         {
-          "text": "im here cause penguin3",
+          "text": "Freebies",
           "score": [1, 2, 2, 2, 6]
         },
         {
-          "text": "im here cause swag",
+          "text": "Buying merchandise",
           "score": [5, 3, 2, 7, 1]
         },
         {
-          "text": "im here cause doggo",
+          "text": "Experience",
           "score": [8, 2, 0, 4, 4]
         },
         {
-          "text": "im here cause meow",
+          "text": "Good company",
           "score": [3, 6, 6, 6, 7]
         }
       ]
@@ -80,19 +95,19 @@
     {
       "options": [
         {
-          "text": "im here cause penguin4",
+          "text": "Look for familiar faces",
           "score": [1, 2, 2, 2, 6]
         },
         {
-          "text": "im here cause swag",
+          "text": "Die inside from anxiety",
           "score": [5, 3, 2, 7, 1]
         },
         {
-          "text": "im here cause doggo",
+          "text": "Text your friends or update social media",
           "score": [8, 2, 0, 4, 4]
         },
         {
-          "text": "im here cause meow",
+          "text": "Go straight to objectives e.g booths",
           "score": [3, 6, 6, 6, 7]
         }
       ]
@@ -100,19 +115,119 @@
     {
       "options": [
         {
-          "text": "im here cause penguin5",
+          "text": "Leave lmao my social anxiety ain't got time for this",
           "score": [1, 2, 2, 2, 6]
         },
         {
-          "text": "im here cause swag",
+          "text": "Gather up courage and talk to a stranger",
           "score": [5, 3, 2, 7, 1]
         },
         {
-          "text": "im here cause doggo",
+          "text": "Confidently make friends with a stranger",
           "score": [8, 2, 0, 4, 4]
         },
         {
-          "text": "im here cause meow",
+          "text": "Do nothing about it. I mean, who cares?",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Technically! e.g programmer",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "Creatively! e.g designer",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "Communicatively! e.g manager",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "Analytically! e.g data analyst",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Mingling with the others",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "Scavenging for extra food or drinks",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "Stand awkwardly in the middle of nowhere",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "Secretly leaving the party",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Hobbies that require no brain power",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "Spending time with loved ones",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "Working on projects",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "Touching grass outside alone",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I'm on my way! Wait for me.",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "Are you crazy or drunk? It's 3am! Next time?",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "No.",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "Nothing; I ignore the call",
+          "score": [3, 6, 6, 6, 7]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "BED MY BELOVED BED.. Sleep!",
+          "score": [1, 2, 2, 2, 6]
+        },
+        {
+          "text": "Scroll social media mindlessly",
+          "score": [5, 3, 2, 7, 1]
+        },
+        {
+          "text": "Hobby time! Play games? Read? Write?",
+          "score": [8, 2, 0, 4, 4]
+        },
+        {
+          "text": "Ponder about life and think about the event you just attended",
           "score": [3, 6, 6, 6, 7]
         }
       ]
