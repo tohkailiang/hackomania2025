@@ -1,5 +1,7 @@
+
 class Attributes {
 
+    
     // adapted from the Big Five personalities
     static AttributeType = {
         OPENNESS: 'Openness to Experience',
@@ -12,6 +14,7 @@ class Attributes {
     constructor(attribute)
     {
         this.attribute = attribute;
+        this.score =  Array.from({ length: Object.keys(Attributes.AttributeType).length }, () => 0);
     }
 
 }
