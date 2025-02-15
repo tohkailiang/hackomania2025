@@ -26,7 +26,10 @@ export default class Personality
 
     addRelations(relations)
     {
-        this.relations = relations;
+        for(let i = 0; i < relations.length; ++i)
+        {
+            this.relations.push("./sprites/results/" + relations[i].toLowerCase() +".png");
+        }
     }
 
     addQuotes(quote)

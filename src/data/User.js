@@ -1,6 +1,6 @@
 export default class User {
 
-    constyoructor()
+    constructor()
     {
         this.attributesScores = [0, 0, 0, 0, 0];
     }
