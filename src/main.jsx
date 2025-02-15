@@ -6,6 +6,7 @@ import LandingPage from './components/LandingPage.jsx'
 import QuizPanel from './components/QuizPanel.jsx'
 import GamePanel from './components/GamePanel.jsx'
 import User from './data/User.js'
+import ImagePoker from './pixie/ImagePoker.jsx'
 
 const user = new User();
 
@@ -27,6 +28,11 @@ createRoot(document.getElementById('root')).render(
           } />
         </Routes>
       </div>
+        <div style={{position:'absolute', bottom: '10px', left: '10px', zIndex:'2'}}>
+        <ImagePoker image={"sprites/chicken.png"}></ImagePoker>
+        </div>
+        <div style={{position:'absolute', bottom: '10px', right: '10px', zIndex:'2'}}>
+        <ImagePoker image={"sprites/rooster.png"}></ImagePoker>
+        </div>
     </BrowserRouter>
-
 )

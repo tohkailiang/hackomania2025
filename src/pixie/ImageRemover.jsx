@@ -6,6 +6,7 @@ import { useInterval } from 'usehooks-ts';
 export default function ImageRemover({X, Y, image})
 {
     const [scale, setScale] = useState(1);
+    const [mouseoverScale, setMouseover] = useState(1);
     const [remove, setRemove] = useState(false);
 
     useInterval(
@@ -27,12 +28,22 @@ export default function ImageRemover({X, Y, image})
                     x={X}
                     y={Y - (1 - scale) * 100}
                     anchor={0.5}
-                    scale={1}
+                    scale={mouseoverScale}
                     alpha={scale}
                     interactive={true}
                     pointerdown={()=>
                     {
                         setRemove(true);
+                    }
+                    }
+                    onpointerenter={()=>
+                    {
+                        setMouseover(1.1);
+                    }
+                    }
+                    onpointerleave={()=>
+                    {
+                        setMouseover(1);
                     }
                     }
                     >
