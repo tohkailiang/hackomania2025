@@ -7,6 +7,7 @@ import './ResultsPanel.css';
 import Affinities from './results/Affinities';
 import { Personalities } from '../systems/personalities.js';
 import User from '../data/User';
+import { standardButtonStyle } from '../styles/buttonStyles';
 
 class ResultsPanel extends React.Component {
   constructor(props) {
@@ -72,7 +73,7 @@ class ResultsPanel extends React.Component {
 
           <button
             onClick={() => this.props.navigate('/interactions')}
-            className="continue-button"
+            style={standardButtonStyle}
           >
             Continue
           </button>

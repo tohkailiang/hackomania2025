@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
+import { standardButtonStyle } from '../styles/buttonStyles';
 
 const LandingPage = ({ logo, title, description }) => {
   const navigate = useNavigate();
@@ -15,11 +16,11 @@ const LandingPage = ({ logo, title, description }) => {
         <h1>{title}</h1>
         <p>{description}</p>
         <button
-          className="start-button"
+          style={standardButtonStyle}
           onClick={handleStartQuiz}
         >
-        Start Quiz
-      </button>
+          Start Quiz
+        </button>
     </div>
     </div>
   );

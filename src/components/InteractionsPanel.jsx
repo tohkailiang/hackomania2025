@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import { interactionDisplayConfig } from '../data/interactionDisplayConfig';
 import { motion } from 'framer-motion';
+import { standardButtonStyle } from '../styles/buttonStyles';
 
 const InteractionsPanel = ({ interactions }) => {
   const navigate = useNavigate();
@@ -65,18 +66,17 @@ const InteractionsPanel = ({ interactions }) => {
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', width: '100%', marginTop: 'auto' }}>
       <button
-          onClick={() => navigate('/redirect')}
-          style={{
-            width: '350px',
-            maxWidth: '100%',
-            height: '66px',
-            backgroundColor: '#FF0000',
-            border: '2px solid #00FF00',
-            marginBottom: '20px'
-          }}
-        >
-          Continue
-        </button>
+        onClick={() => navigate('/redirect')}
+        style={{
+          ...standardButtonStyle,
+          width: '350px',
+          maxWidth: '100%',
+          height: '66px',
+          marginBottom: '20px'
+        }}
+      >
+        Continue
+      </button>
       </div>
     </div>
   );
