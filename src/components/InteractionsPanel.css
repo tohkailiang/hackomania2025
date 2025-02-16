@@ -21,10 +21,11 @@
 }
 
 .stat-item label {
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 0.5rem;
 }
 
 .stat-item span {
   color: #666;
+  font-weight: 400;
 }

@@ -13,7 +13,9 @@ const OptionButton = ({ text, onClick }) => {
         width: 255,
         height: 66,
         backgroundColor: isHovered ? '#F1B24B' : '#9FB3B9',
-        border: `2px solid ${isHovered ? '#486C95' : '#9FB3B9'}`
+        border: `2px solid ${isHovered ? '#486C95' : '#9FB3B9'}`,
+        fontFamily: 'Poppins, sans-serif',
+        fontSize: '16px'
       }}
     >
       {text}

@@ -38,7 +38,7 @@ class ResultsPanel extends React.Component {
             <div className="quotes-grid">
               {quotes.map((quote, index) => (
                 <blockquote key={`quote-${index}`} className="quote-item">
-                  {quote}
+                  "{quote}"
                 </blockquote>
               ))}
             </div>
@@ -55,7 +55,7 @@ class ResultsPanel extends React.Component {
 
           <div className="side-by-side-container">
             <section className="affinities-section">
-              <h2>Affinities</h2>
+              <h2>Best Friends</h2>
               <Affinities imagePaths={affinities} />
             </section>
 
@@ -64,7 +64,7 @@ class ResultsPanel extends React.Component {
               <div className="reviews-grid">
                 {reviews.map((review, index) => (
                   <div key={`review-${index}`} className="review-item">
-                    {review}
+                    "{review}"
                   </div>
                 ))}
               </div>

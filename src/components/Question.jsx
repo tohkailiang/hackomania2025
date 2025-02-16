@@ -3,7 +3,10 @@ import PropTypes from 'prop-types';
 
 const Question = ({ text }) => {
   return (
-    <div>
+    <div style={{
+      fontFamily: 'Poppins, sans-serif',
+      fontSize: '18px'
+    }}>
       {text.text}
     </div>
   );
