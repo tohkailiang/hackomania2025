@@ -13,17 +13,17 @@ export default function RecommendationPage({ topic, title }) {
       linkCards: [
         {
           imagePath: './sprites/logos/afa.png',
-          description: 'Recommendation 1',
+          description: 'Animal Festival ASIA',
           link: 'https://example.com/1'
         },
         {
           imagePath: './sprites/logos/comex.png',
-          description: 'Recommendation 2',
+          description: 'COMEX',
           link: 'https://example.com/2'
         },
         {
           imagePath: './sprites/logos/mangacon.png',
-          description: 'Recommendation 3',
+          description: 'MangaCon',
           link: 'https://example.com/3'
         }
       ]
