@@ -8,8 +8,8 @@ const Logo = ({ imagePath }) => {
         src={imagePath} 
         alt="Result Logo" 
         className="results-logo"
-        width={128}
-        height={128}
+        width={200}
+        height={200}
       />
     </div>
   );

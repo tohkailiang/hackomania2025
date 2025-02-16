@@ -5,16 +5,18 @@
 }
 
 .logo-wrapper {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 10;
 }
 
+.results-panel {
+  font-family: 'Poppins', sans-serif;
+}
+
 .results-logo {
-  width: 128px;
-  height: 128px;
+  width: 200px;
+  height: 200px;
   object-fit: contain;
+  padding-bottom: 20px;
 }
 
 .side-by-side-container {
@@ -44,12 +46,6 @@
 .logo-section {
   display: flex;
   justify-content: center;
-}
-
-.results-logo {
-  width: 128px;
-  height: 128px;
-  object-fit: contain;
 }
 
 .traits-list {
@@ -96,16 +92,19 @@ section {
 }
 
 .results-title {
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
 section h2 {
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-bottom: 1rem;
   font-weight: 500;
 }
 
 .quote-item {
+  font-family: 'Poppins', sans-serif;
   background-color: #f8f8f8;
   padding: 1rem;
   border-radius: 8px;
@@ -113,10 +112,23 @@ section h2 {
   font-weight: 400;
 }
 
+.traits-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .trait-item {
+  font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
   padding: 0.75rem;
   border-radius: 4px;
   text-align: center;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

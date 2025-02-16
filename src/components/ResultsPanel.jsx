@@ -60,7 +60,7 @@ class ResultsPanel extends React.Component {
             </section>
 
             <section className="reviews-section">
-              <h2>Reviews</h2>
+              <h2>Peer Reviews</h2>
               <div className="reviews-grid">
                 {reviews.map((review, index) => (
                   <div key={`review-${index}`} className="review-item">

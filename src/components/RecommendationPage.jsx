@@ -61,8 +61,8 @@ export default function RecommendationPage({ topic, title }) {
       }}>
       <h1 style={{
         textAlign: 'center',
-        marginBottom: '40px',
-        fontSize: '2rem'
+        marginBottom: '0px',
+        fontSize: '1.8rem'
       }}>
         {formattedTitle}
       </h1>
@@ -84,7 +84,7 @@ export default function RecommendationPage({ topic, title }) {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                marginTop: '40px',
+                marginTop: '20px',
                 gap: '20px'
               }}>
                 <span style={{ fontSize: '16px' }}>Want to save the recommendations? Sign up for a GeeksHacking account to connect with like-minded people!</span>

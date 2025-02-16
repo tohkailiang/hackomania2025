@@ -2,19 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Traits extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     const { texts } = this.props;
     return (
-      <div>
+      <ul className="traits-list">
         {texts.map((text, index) => (
-          <div key={text}>{text}</div>
+          <li key={text} className="trait-item">{text}</li>
         ))}
-      </div>
+      </ul>
     );
   }
 }
