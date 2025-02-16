@@ -13,17 +13,17 @@ export default function RecommendationPage({ topic, title }) {
       linkCards: [
         {
           imagePath: './sprites/logos/afa.png',
-          description: 'Recommendation 1',
+          description: 'Animal Festival ASIA',
           link: 'https://example.com/1'
         },
         {
           imagePath: './sprites/logos/comex.png',
-          description: 'Recommendation 2',
+          description: 'COMEX',
           link: 'https://example.com/2'
         },
         {
           imagePath: './sprites/logos/mangacon.png',
-          description: 'Recommendation 3',
+          description: 'MangaCon',
           link: 'https://example.com/3'
         }
       ]
@@ -32,17 +32,17 @@ export default function RecommendationPage({ topic, title }) {
       description: "Communities that you might be interested in:",
       linkCards: [
         {
-          imagePath: './sprites/results/raccoon.png',
+          imagePath: './sprites/logos/sgga.png',
           description: 'New Release 1',
           link: 'https://example.com/new1'
         },
         {
-          imagePath: './sprites/results/honeybee.png',
+          imagePath: './sprites/logos/sgga.png',
           description: 'New Release 2',
           link: 'https://example.com/new2'
         },
         {
-          imagePath: './sprites/results/elephant.png',
+          imagePath: './sprites/logos/sgga.png',
           description: 'New Release 3',
           link: 'https://example.com/new3'
         }
