@@ -33,17 +33,17 @@ export default function RecommendationPage({ topic, title }) {
       linkCards: [
         {
           imagePath: './sprites/logos/sgga.png',
-          description: 'New Release 1',
+          description: 'Singapore Gorilla Association',
           link: 'https://example.com/new1'
         },
         {
           imagePath: './sprites/logos/mal.png',
-          description: 'New Release 2',
+          description: 'My Anime Backlog',
           link: 'https://example.com/new2'
         },
         {
           imagePath: './sprites/logos/sgtoku.png',
-          description: 'New Release 3',
+          description: 'SG Toku',
           link: 'https://example.com/new3'
         }
       ]
