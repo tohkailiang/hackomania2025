@@ -30,7 +30,7 @@ class ResultsPanel extends React.Component {
     return (
       <div className="results-panel">
         <div className="results-content">
-          <h1 className="results-title">{title}</h1>
+          <h1 className="results-title">You're a... {title}!</h1>
 
           <Logo imagePath={logo} />
 

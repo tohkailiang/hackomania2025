@@ -24,7 +24,7 @@
             "worstattr": "AGREEABLENESS",
             "relations": [ "Owl", "Golden Retriever" ],
             "reviews": ["I hate discussing with them", "They got pretty good ideas though"],
-            "quotes": ["Gah, i'll do it my way", "Why do you think so?", "You're not being rational", "I have my own ideas"],
+            "quotes": ["Gah, I'll do it my way", "Why do you think so?", "You're not being rational", "I have my own ideas"],
             "traits":["Creative","Independent", "Non-conformist", "Assertive"]
         },
         {
@@ -78,7 +78,7 @@
             "worstattr": "NEUROTICISM",
             "relations": [ "Peacock", "Honeybee" ],
             "reviews": ["Definitely the life of the party", "So reliable and optimisic!"],
-            "quotes": ["I LOVE YOU MUAMUA", "Don't worry, i'm A OK!", "Gathering?! I'll be there!", "A small setback is nothing!"],
+            "quotes": ["I LOVE YOU MUAMUA", "Don't worry, I'm A OK!", "Gathering?! I'll be there!", "A small setback is nothing!"],
             "traits":["Energetic","Enthusiastic", "Sociable", "Emotionally resilient"]
         },
         {
@@ -90,8 +90,5 @@
             "quotes": ["Are you alright?", "Everything will work out", "We got this!", "Let me know if you need something"],
             "traits":["Empathetic","Supportive", "Calm", "Easygoing"]
         }
-        
-
-
     ]
 }
