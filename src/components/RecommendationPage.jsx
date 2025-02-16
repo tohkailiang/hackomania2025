@@ -32,17 +32,17 @@ export default function RecommendationPage({ topic, title }) {
       description: "Communities that you might be interested in:",
       linkCards: [
         {
-          imagePath: './sprites/results/raccoon.png',
+          imagePath: './sprites/logos/sgga.png',
           description: 'New Release 1',
           link: 'https://example.com/new1'
         },
         {
-          imagePath: './sprites/results/honeybee.png',
+          imagePath: './sprites/logos/sgga.png',
           description: 'New Release 2',
           link: 'https://example.com/new2'
         },
         {
-          imagePath: './sprites/results/elephant.png',
+          imagePath: './sprites/logos/sgga.png',
           description: 'New Release 3',
           link: 'https://example.com/new3'
         }
