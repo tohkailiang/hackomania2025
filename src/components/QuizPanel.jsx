@@ -72,7 +72,8 @@ class QuizPanel extends React.Component {
       display: 'flex',
       flexDirection: 'column',
       padding: '20px',
-      boxSizing: 'border-box'
+      boxSizing: 'border-box',
+      fontFamily: 'Poppins, sans-serif'
     };
 
     const questionContainerStyle = {

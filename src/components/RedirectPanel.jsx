@@ -18,9 +18,9 @@ const RedirectPanel = () => {
       alignItems: 'center',
       justifyContent: 'center',
       minHeight: '100vh',
-      gap: '20px'
+      gap: '10px'
     }}>
-      <h2>Before we continue, what should we call you?</h2>
+      <h2>Before we continue, how do we address you?</h2>
       
       <input
         type="text"
