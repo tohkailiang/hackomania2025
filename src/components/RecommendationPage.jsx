@@ -1,5 +1,6 @@
 import LinkCardViewer from './LinkCardViewer';
 import { useLocation } from 'react-router-dom';
+import { standardButtonStyle } from '../styles/buttonStyles';
 
 export default function RecommendationPage({ topic, title }) {
   const location = useLocation();
@@ -88,15 +89,10 @@ export default function RecommendationPage({ topic, title }) {
               }}>
                 <span style={{ fontSize: '16px' }}>Want to save the recommendations? Sign up for a GeeksHacking account to connect with like-minded people!</span>
                 <button style={{
-                  border: 'none',
+                  ...standardButtonStyle,
                   background: '#007bff',
                   color: 'white',
-                  padding: '10px 20px',
-                  borderRadius: '5px',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center'
+                  width: 'auto'
                 }}>
                   <span style={{ fontSize: '20px' }}>Sign up</span>
                 </button>
