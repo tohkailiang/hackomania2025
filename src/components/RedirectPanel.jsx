@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { standardButtonStyle } from '../styles/buttonStyles';
 
 const RedirectPanel = () => {
   const [name, setName] = useState('');
@@ -35,9 +36,8 @@ const RedirectPanel = () => {
       <button
         onClick={handleProceed}
         style={{
-          padding: '10px 20px',
-          fontSize: '16px',
-          cursor: 'pointer'
+          ...standardButtonStyle,
+          width: 'auto'
         }}
       >
         Proceed

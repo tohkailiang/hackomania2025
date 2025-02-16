@@ -1,5 +1,6 @@
 import LinkCardViewer from './LinkCardViewer';
 import { useLocation } from 'react-router-dom';
+import { standardButtonStyle } from '../styles/buttonStyles';
 
 export default function RecommendationPage({ topic, title }) {
   const location = useLocation();
@@ -11,17 +12,17 @@ export default function RecommendationPage({ topic, title }) {
       description: "Upcoming events that you might be interested in:",
       linkCards: [
         {
-          imagePath: './sprites/results/honeybee.png',
+          imagePath: './sprites/logos/afa.png',
           description: 'Recommendation 1',
           link: 'https://example.com/1'
         },
         {
-          imagePath: './sprites/results/elephant.png',
+          imagePath: './sprites/logos/comex.png',
           description: 'Recommendation 2',
           link: 'https://example.com/2'
         },
         {
-          imagePath: './sprites/results/axolotl.png',
+          imagePath: './sprites/logos/mangacon.png',
           description: 'Recommendation 3',
           link: 'https://example.com/3'
         }
@@ -88,15 +89,10 @@ export default function RecommendationPage({ topic, title }) {
               }}>
                 <span style={{ fontSize: '16px' }}>Want to save the recommendations? Sign up for a GeeksHacking account to connect with like-minded people!</span>
                 <button style={{
-                  border: 'none',
+                  ...standardButtonStyle,
                   background: '#007bff',
                   color: 'white',
-                  padding: '10px 20px',
-                  borderRadius: '5px',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center'
+                  width: 'auto'
                 }}>
                   <span style={{ fontSize: '20px' }}>Sign up</span>
                 </button>
