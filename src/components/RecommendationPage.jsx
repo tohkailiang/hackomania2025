@@ -11,17 +11,17 @@ export default function RecommendationPage({ topic, title }) {
       description: "Upcoming events that you might be interested in:",
       linkCards: [
         {
-          imagePath: './sprites/results/honeybee.png',
+          imagePath: './sprites/logos/afa.png',
           description: 'Recommendation 1',
           link: 'https://example.com/1'
         },
         {
-          imagePath: './sprites/results/elephant.png',
+          imagePath: './sprites/logos/comex.png',
           description: 'Recommendation 2',
           link: 'https://example.com/2'
         },
         {
-          imagePath: './sprites/results/axolotl.png',
+          imagePath: './sprites/logos/mangacon.png',
           description: 'Recommendation 3',
           link: 'https://example.com/3'
         }
