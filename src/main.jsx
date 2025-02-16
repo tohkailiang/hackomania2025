@@ -58,7 +58,7 @@ createRoot(document.getElementById('root')).render(
           <LandingPage 
             logo="./sprites/pengwing.png" 
             title="PengQuiz" 
-            description="A personality quiz for fowl-lovers" 
+            description="What animal are you?" 
           />
         } />
         <Route path="/quiz" element={
