@@ -1,0 +1,236 @@
+{
+  "questions": [
+    {
+      "text": "Someone just called you a nerd.. What were you seen doing?"
+    },
+    {
+      "text": "Nerd or not, you’re excited for an event! What is it?"
+    },
+    {
+      "text": "Besides the contents of the actual event, you also look forward most to.."
+    },
+    {
+      "text": "You finally arrived at the event. What do you do first?"
+    },
+    {
+      "text": "After some time, you realised there’s no one you’re familiar with. You.."
+    },
+    {
+      "text": "An impromptu group project happens?! Regardless, you feel most confident in contributing.."
+    },
+    {
+      "text": "The event is over.. Or is it? There’s an afterparty and you’re seen…"
+    },
+    {
+      "text": "Time to go home! Tomorrow is a weekend, and you’re planning to spend it by.."
+    },
+    {
+      "text": "Your friend suddenly calls you to go for drinks.. It’s 3am.. You reply.."
+    },
+    {
+      "text": "Home sweet home.. After settling down, you.."
+    }
+  ],
+  "optionSets": [
+    {
+      "options": [
+        {
+          "text": "Coding",
+          "score": [4, 5, 2, 2, 2]
+        },
+        {
+          "text": "Gaming",
+          "score": [3, 3, 4, 3, 3]
+        },
+        {
+          "text": "Researching",
+          "score": [5, 5, 2, 3, 2]
+        },
+        {
+          "text": "Tinkering with robotics",
+          "score": [2, 3, 4, 4, 2]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Hackomania :) GeeksHacking hi :)",
+          "score": [5, 4, 5, 3, 2]
+        },
+        {
+          "text": "Anime Festival Asia",
+          "score": [5, 3, 5, 4, 3]
+        },
+        {
+          "text": "Gamescom Asia",
+          "score": [4, 3, 5, 3, 3]
+        },
+        {
+          "text": "Singapore Science Festival",
+          "score": [4, 4, 3, 3, 2]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Freebies",
+          "score": [2, 2, 4, 3, 3]
+        },
+        {
+          "text": "Buying merchandise",
+          "score": [3, 4, 3, 3, 2]
+        },
+        {
+          "text": "Experience",
+          "score": [5, 3, 4, 3, 2]
+        },
+        {
+          "text": "Good company",
+          "score": [3, 3, 4, 5, 2]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Look for familiar faces",
+          "score": [3, 2, 4, 4, 3]
+        },
+        {
+          "text": "Die inside from anxiety",
+          "score": [2, 2, 2, 3, 5]
+        },
+        {
+          "text": "Text your friends or update social media",
+          "score": [3, 3, 4, 4, 3]
+        },
+        {
+          "text": "Go straight to objectives e.g booths",
+          "score": [3, 4, 3, 3, 2]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Leave lmao my social anxiety ain't got time for this",
+          "score": [2, 3, 2, 2, 5]
+        },
+        {
+          "text": "Gather up courage and talk to a stranger",
+          "score": [3, 3, 3, 4, 3]
+        },
+        {
+          "text": "Confidently make friends with a stranger",
+          "score": [3, 3, 5, 4, 2]
+        },
+        {
+          "text": "Do nothing about it. I mean, who cares?",
+          "score": [1, 2, 2, 2, 4]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Technically! e.g programmer",
+          "score": [4, 5, 2, 3, 2]
+        },
+        {
+          "text": "Creatively! e.g designer",
+          "score": [5, 4, 3, 3, 2]
+        },
+        {
+          "text": "Communicatively! e.g manager",
+          "score": [3, 4, 4, 5, 2]
+        },
+        {
+          "text": "Analytically! e.g data analyst",
+          "score": [4, 5, 2, 3, 2]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Mingling with the others",
+          "score": [3, 2, 5, 4, 2]
+        },
+        {
+          "text": "Scavenging for extra food or drinks",
+          "score": [2, 3, 3, 3, 3]
+        },
+        {
+          "text": "Stand awkwardly in the middle of nowhere",
+          "score": [2, 2, 2, 3, 4]
+        },
+        {
+          "text": "Secretly leaving the party",
+          "score": [2, 3, 2, 2, 4]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "Hobbies that require no brain power",
+          "score": [2, 3, 2, 3, 2]
+        },
+        {
+          "text": "Spending time with loved ones",
+          "score": [3, 3, 4, 5, 2]
+        },
+        {
+          "text": "Working on projects",
+          "score": [4, 5, 2, 3, 2]
+        },
+        {
+          "text": "Touching grass outside alone",
+          "score": [3, 3, 2, 3, 2]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "I'm on my way! Wait for me.",
+          "score": [3, 2, 5, 4, 2]
+        },
+        {
+          "text": "Are you crazy or drunk? It's 3am! Next time?",
+          "score": [2, 4, 2, 3, 3]
+        },
+        {
+          "text": "No.",
+          "score": [2, 4, 2, 2, 3]
+        },
+        {
+          "text": "Nothing; I ignore the call",
+          "score": [2, 3, 2, 2, 3]
+        }
+      ]
+    },
+    {
+      "options": [
+        {
+          "text": "BED MY BELOVED BED.. Sleep!",
+          "score": [2, 4, 2, 3, 3]
+        },
+        {
+          "text": "Scroll social media mindlessly",
+          "score": [3, 2, 3, 3, 2]
+        },
+        {
+          "text": "Hobby time! Play games? Read? Write?",
+          "score": [4, 3, 3, 3, 2]
+        },
+        {
+          "text": "Ponder about life and think about the event you just attended",
+          "score": [5, 3, 2, 3, 2]
+        }
+      ]
+    }
+  ] 
+}
