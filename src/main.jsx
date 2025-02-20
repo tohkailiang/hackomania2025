@@ -1,6 +1,6 @@
 // import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import './index.css'
 import LandingPage from './components/LandingPage.jsx'
 import QuizPanel from './components/QuizPanel.jsx'
@@ -51,7 +51,7 @@ const result = new Result()
 
 const interactions = new Interactions();
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <HashRouter>
     <div className="container" style={{position:'relative', zIndex:'1', display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden'}}>
       <Routes>
       <Route path="/" element={
@@ -88,5 +88,5 @@ createRoot(document.getElementById('root')).render(
         } />
       </Routes>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 )
